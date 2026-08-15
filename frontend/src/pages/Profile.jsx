@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Navbar from '../components/Navbar';
 import { api } from '../lib/api';
 
 export default function Profile() {
@@ -32,96 +33,140 @@ export default function Profile() {
     navigate(`/gap-result?talentId=t1&roleId=${selectedRole}`);
   };
 
+  const groupedSkills = talent?.skills.reduce((acc, skill) => {
+    if (!acc[skill.category]) acc[skill.category] = [];
+    acc[skill.category].push(skill);
+    return acc;
+  }, {}) || {};
+
   if (loading) {
     return (
-      <div className="min-h-screen bg-canvas flex items-center justify-center">
-        <div className="text-secondary">Loading...</div>
+      <div className="min-h-screen bg-canvas">
+        <Navbar />
+        <div className="flex items-center justify-center h-96">
+          <div className="text-secondary">Loading profile...</div>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-canvas py-16 px-8">
-      <motion.div
-        className="max-w-3xl mx-auto"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <motion.h1
-          className="text-[32px] leading-[40px] font-semibold text-primary mb-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-        >
-          Talent Profile
-        </motion.h1>
+    <div className="min-h-screen bg-canvas">
+      <Navbar />
 
+      <div className="max-w-5xl mx-auto px-6 py-12">
         <motion.div
-          className="bg-surface rounded-lg p-6 shadow-sm border border-subtle mb-8"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-        >
-          <h2 className="text-[24px] leading-[32px] font-semibold text-primary mb-2">
-            {talent?.name}
-          </h2>
-          <p className="text-[16px] leading-[24px] text-secondary mb-6">
-            {talent?.education}
-          </p>
-
-          <h3 className="text-[20px] leading-[28px] font-semibold text-primary mb-4">
-            Current Skills
-          </h3>
-          <div className="flex flex-wrap gap-2">
-            {talent?.skills.map((skill, index) => (
-              <motion.div
-                key={skill.skillId}
-                className="bg-brand-subtle text-brand text-[12px] font-medium px-3 py-1 rounded-pill"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: 0.3 + index * 0.05 }}
-              >
-                {skill.name} ({skill.proficiency}/3)
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="bg-surface rounded-lg p-6 shadow-sm border border-subtle mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
+          transition={{ duration: 0.5 }}
         >
-          <label className="block text-[12px] leading-[16px] font-medium text-primary mb-2">
-            Select Role to Analyze
-          </label>
-          <select
-            value={selectedRole}
-            onChange={(e) => setSelectedRole(e.target.value)}
-            className="w-full h-[44px] px-[14px] bg-surface border border-default rounded-md text-primary"
-          >
-            {roles.map((role) => (
-              <option key={role.id} value={role.id}>
-                {role.name}
-              </option>
-            ))}
-          </select>
-        </motion.div>
+          <div className="bg-surface rounded-2xl p-8 shadow-sm border border-subtle mb-8">
+            <div className="flex items-start gap-6">
+              <div className="w-20 h-20 bg-brand rounded-xl flex items-center justify-center flex-shrink-0">
+                <span className="text-on-brand font-bold text-[32px]">
+                  {talent?.name.split(' ').map(n => n[0]).join('')}
+                </span>
+              </div>
 
-        <motion.button
-          onClick={handleAnalyze}
-          className="w-full bg-brand hover:bg-brand-hover text-on-brand font-medium text-[16px] h-[52px] rounded-md transition-colors duration-150"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.4, delay: 0.5 }}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-        >
-          Analyze Readiness
-        </motion.button>
-      </motion.div>
+              <div className="flex-1">
+                <h1 className="text-[28px] font-bold text-primary mb-2">{talent?.name}</h1>
+                <p className="text-[15px] text-secondary mb-4">{talent?.education}</p>
+
+                <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-brand rounded-full"></div>
+                    <span className="text-[13px] text-muted">{talent?.skills.length} Skills</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                    <span className="text-[13px] text-muted">SMK Graduate</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-amber-600 rounded-full"></div>
+                    <span className="text-[13px] text-muted">Batam</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-surface rounded-2xl p-8 shadow-sm border border-subtle mb-8">
+            <h2 className="text-[20px] font-semibold text-primary mb-6">Current Skills</h2>
+
+            <div className="space-y-6">
+              {Object.entries(groupedSkills).map(([category, skills], catIndex) => (
+                <div key={category}>
+                  <div className="text-[13px] font-medium text-muted uppercase tracking-wide mb-3">
+                    {category}
+                  </div>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                    {skills.map((skill, index) => (
+                      <motion.div
+                        key={skill.skillId}
+                        className="bg-canvas rounded-lg p-4 border border-subtle"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: catIndex * 0.1 + index * 0.05 }}
+                      >
+                        <div className="text-[14px] font-medium text-primary mb-2">
+                          {skill.name}
+                        </div>
+                        <div className="flex items-center gap-1">
+                          {[1, 2, 3].map((level) => (
+                            <div
+                              key={level}
+                              className={`h-1.5 flex-1 rounded-full ${
+                                level <= skill.proficiency ? 'bg-brand' : 'bg-subtle'
+                              }`}
+                            />
+                          ))}
+                          <span className="text-[12px] text-muted ml-2">
+                            {skill.proficiency}/3
+                          </span>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-surface rounded-2xl p-8 shadow-sm border border-subtle">
+            <h2 className="text-[20px] font-semibold text-primary mb-6">
+              Analyze Readiness for Role
+            </h2>
+
+            <div className="space-y-4">
+              <div>
+                <label className="block text-[13px] font-medium text-secondary mb-2">
+                  Select Target Role
+                </label>
+                <select
+                  value={selectedRole}
+                  onChange={(e) => setSelectedRole(e.target.value)}
+                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-all"
+                >
+                  {roles.map((role) => (
+                    <option key={role.id} value={role.id}>
+                      {role.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <motion.button
+                onClick={handleAnalyze}
+                className="w-full bg-brand hover:bg-brand-hover text-on-brand font-semibold text-[16px] h-[52px] rounded-lg shadow-sm transition-all duration-200"
+                whileHover={{ scale: 1.01 }}
+                whileTap={{ scale: 0.99 }}
+              >
+                Analyze Readiness →
+              </motion.button>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 }
