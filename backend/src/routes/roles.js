@@ -1,12 +1,11 @@
 const express = require('express');
+const { pool } = require('../db/connection');
 const router = express.Router();
 
 router.get('/', async (req, res, next) => {
   try {
-    res.json([
-      { id: 1, name: "Network Technician" },
-      { id: 2, name: "Cloud Engineer" }
-    ]);
+    const result = await pool.query('SELECT id, name FROM roles ORDER BY name');
+    res.json(result.rows);
   } catch (err) {
     next(err);
   }

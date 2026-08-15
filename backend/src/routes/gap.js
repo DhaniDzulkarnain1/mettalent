@@ -4,18 +4,27 @@ const { validate } = require('../middleware/validate');
 const router = express.Router();
 
 const gapSchema = z.object({
-  talentId: z.number(),
-  roleId: z.number()
+  talentId: z.string(),
+  roleId: z.string()
 });
 
 router.post('/', validate(gapSchema), async (req, res, next) => {
   try {
-    res.json({
-      readiness: 0.52,
-      have: [{ skillId: 1, name: "Networking", proficiency: 2 }],
-      gaps: [{ skillId: 2, name: "Cloud Computing", weight: 3, reason: "Required for role" }],
-      explanation: "Covers 1/2 required skills; largest gap: Cloud Computing"
+    const mlServiceUrl = process.env.ML_SERVICE_URL || 'http://localhost:8000';
+
+    const response = await fetch(`${mlServiceUrl}/gap`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(req.body)
     });
+
+    if (!response.ok) {
+      const error = await response.json();
+      return res.status(response.status).json(error);
+    }
+
+    const data = await response.json();
+    res.json(data);
   } catch (err) {
     next(err);
   }
