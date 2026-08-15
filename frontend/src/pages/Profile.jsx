@@ -159,7 +159,7 @@ export default function Profile() {
                 <select
                   value={selectedRole}
                   onChange={(e) => setSelectedRole(e.target.value)}
-                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent hover:border-gray-400 transition-all cursor-pointer"
+                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent hover:border-gray-400 transition-all duration-200 ease-in-out cursor-pointer"
                 >
                   {roles.map((role) => (
                     <option key={role.id} value={role.id}>

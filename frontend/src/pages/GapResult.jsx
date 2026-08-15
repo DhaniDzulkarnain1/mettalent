@@ -61,7 +61,7 @@ export default function GapResult() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-8">
+          <div className="bg-green-50 rounded-2xl p-8 shadow-sm border border-green-200 mb-8">
             <div className="flex items-center justify-between mb-6">
               <div>
                 <h1 className="text-[28px] font-bold mb-2 text-primary">Readiness Analysis</h1>
@@ -84,7 +84,7 @@ export default function GapResult() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-surface rounded-2xl p-6 shadow-sm border border-subtle">
+            <div className="bg-green-100 rounded-2xl p-6 shadow-sm border border-green-200">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 bg-brand-subtle rounded-lg flex items-center justify-center">
                   <span className="text-brand font-bold">✓</span>
@@ -98,7 +98,7 @@ export default function GapResult() {
                 {result.have.map((skill, index) => (
                   <motion.div
                     key={skill.skillId}
-                    className="flex items-center justify-between p-3 bg-brand-subtle rounded-lg"
+                    className="flex items-center justify-between p-3 bg-white rounded-lg"
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
@@ -119,7 +119,7 @@ export default function GapResult() {
               </div>
             </div>
 
-            <div className="bg-surface rounded-2xl p-6 shadow-sm border border-subtle">
+            <div className="bg-green-100 rounded-2xl p-6 shadow-sm border border-green-200">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center">
                   <span className="text-amber-700 font-bold">!</span>
@@ -152,7 +152,7 @@ export default function GapResult() {
 
           {courses.length > 0 && (
             <motion.div
-              className="bg-surface rounded-2xl p-8 shadow-sm border border-subtle mb-8"
+              className="bg-green-100 rounded-2xl p-8 shadow-sm border border-green-200 mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
