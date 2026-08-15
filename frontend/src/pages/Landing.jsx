@@ -14,34 +14,34 @@ export default function Landing() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="max-w-[1200px] mx-auto px-6 py-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-[1200px] mx-auto px-6 py-12 md:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Left Column - Hero Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-block px-4 py-2 bg-green-100 text-green-800 text-[13px] font-medium rounded-full mb-6">
+            <div className="inline-block px-4 py-2 bg-green-100 text-green-800 text-[11px] md:text-[13px] font-medium rounded-full mb-4 md:mb-6">
               Batam–Singapore Data Center Corridor
             </div>
 
-            <h1 className="text-[48px] leading-[56px] font-bold text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-[32px] leading-[40px] md:text-[48px] md:leading-[56px] font-bold text-gray-900 mb-4 md:mb-6 tracking-tight">
               Connecting{' '}
               <span className="text-green-700">Talent</span>
               <br />
               to Opportunity
             </h1>
 
-            <p className="text-[18px] leading-[28px] text-gray-600 mb-8 max-w-[480px]">
+            <p className="text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] text-gray-600 mb-6 md:mb-8 max-w-[480px]">
               Batam has IDR 120 trillion in data center investment, yet faces 64% youth unemployment.
               We bridge the gap between education, skills, and data center careers.
             </p>
 
-            <div className="flex flex-wrap gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
               <motion.button
                 onClick={() => navigate('/profile')}
-                className="bg-green-700 hover:bg-green-800 text-white font-semibold text-[16px] h-[52px] px-8 rounded-xl shadow-sm transition-all"
+                className="bg-green-700 hover:bg-green-800 text-white font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl shadow-sm transition-all w-full sm:w-auto"
                 whileHover={{ scale: 1.01, boxShadow: '0 4px 12px rgba(28, 77, 45, 0.2)', y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
@@ -49,7 +49,7 @@ export default function Landing() {
               </motion.button>
               <motion.button
                 onClick={() => navigate('/employer')}
-                className="bg-white hover:bg-gray-50 text-gray-900 font-semibold text-[16px] h-[52px] px-8 rounded-xl border border-gray-300 transition-all"
+                className="bg-white hover:bg-gray-50 text-gray-900 font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl border border-gray-300 transition-all w-full sm:w-auto"
                 whileHover={{ scale: 1.01, y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
@@ -57,18 +57,18 @@ export default function Landing() {
               </motion.button>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 max-w-[420px]">
+            <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-[420px]">
               <div className="text-center">
-                <div className="text-[28px] font-bold text-green-700">30+</div>
-                <div className="text-[13px] text-gray-500">Skills Tracked</div>
+                <div className="text-[20px] md:text-[28px] font-bold text-green-700">30+</div>
+                <div className="text-[11px] md:text-[13px] text-gray-500">Skills Tracked</div>
               </div>
               <div className="text-center">
-                <div className="text-[28px] font-bold text-green-700">60+</div>
-                <div className="text-[13px] text-gray-500">Talent Profiles</div>
+                <div className="text-[20px] md:text-[28px] font-bold text-green-700">60+</div>
+                <div className="text-[11px] md:text-[13px] text-gray-500">Talent Profiles</div>
               </div>
               <div className="text-center">
-                <div className="text-[28px] font-bold text-green-700">5</div>
-                <div className="text-[13px] text-gray-500">Data Center Roles</div>
+                <div className="text-[20px] md:text-[28px] font-bold text-green-700">5</div>
+                <div className="text-[11px] md:text-[13px] text-gray-500">Data Center Roles</div>
               </div>
             </div>
           </motion.div>
@@ -78,7 +78,7 @@ export default function Landing() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="relative"
+            className="relative order-first lg:order-last"
           >
             <img
               src={heroIllustration}
@@ -91,20 +91,20 @@ export default function Landing() {
 
       {/* The Challenge Section */}
       <div className="bg-canvas">
-        <div className="max-w-[1200px] mx-auto px-6 py-20">
-          <div className="text-center mb-16">
-            <h2 className="text-[40px] leading-[48px] font-bold text-primary">
+        <div className="max-w-[1200px] mx-auto px-6 py-12 md:py-20">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-[28px] leading-[36px] md:text-[40px] md:leading-[48px] font-bold text-primary">
               The Challenge We Solve
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left Column - Stats Card with Green Background */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="rounded-3xl p-12 shadow-2xl"
+              className="rounded-3xl p-6 md:p-12 shadow-2xl"
               style={{ backgroundColor: '#1C4D2D' }}
             >
               <StatsCarousel />
@@ -115,18 +115,18 @@ export default function Landing() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="rounded-3xl p-10 shadow-2xl"
+              className="rounded-3xl p-6 md:p-10 shadow-2xl"
               style={{
                 background: 'linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 50%, #A5D6A7 100%)',
                 border: '1px solid rgba(28, 77, 45, 0.1)'
               }}
             >
-              <div className="space-y-8">
-                <p className="text-[26px] leading-[38px] font-medium" style={{ color: '#2E5539' }}>
+              <div className="space-y-6 md:space-y-8">
+                <p className="text-[18px] leading-[28px] md:text-[26px] md:leading-[38px] font-medium" style={{ color: '#2E5539' }}>
                   A broken talent supply chain between campuses, certification, and industry.
                 </p>
-                <div className="pt-4">
-                  <p className="text-[36px] leading-[44px] font-bold" style={{ color: '#1C4D2D' }}>
+                <div className="pt-2 md:pt-4">
+                  <p className="text-[24px] leading-[32px] md:text-[36px] md:leading-[44px] font-bold" style={{ color: '#1C4D2D' }}>
                     We fix that.
                   </p>
                 </div>
@@ -138,20 +138,20 @@ export default function Landing() {
 
       {/* Features Section */}
       <div id="features" className="bg-surface">
-        <div className="max-w-[1200px] mx-auto px-6 py-20">
-          <div className="text-center max-w-[640px] mx-auto mb-12">
-            <div className="text-[12px] font-medium tracking-wider uppercase text-brand mb-3">
+        <div className="max-w-[1200px] mx-auto px-6 py-12 md:py-20">
+          <div className="text-center max-w-[640px] mx-auto mb-8 md:mb-12">
+            <div className="text-[11px] md:text-[12px] font-medium tracking-wider uppercase text-brand mb-2 md:mb-3">
               How it works
             </div>
-            <h2 className="text-[32px] leading-[40px] font-semibold text-primary mb-4">
+            <h2 className="text-[24px] leading-[32px] md:text-[32px] md:leading-[40px] font-semibold text-primary mb-3 md:mb-4">
               Reconnecting the talent supply chain
             </h2>
-            <p className="text-[18px] leading-[28px] text-secondary">
+            <p className="text-[15px] leading-[24px] md:text-[18px] md:leading-[28px] text-secondary">
               From a candidate's skills to a ranked match — three steps that close the gap between vocational graduates and data center jobs.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-5 md:gap-6">
             {/* Feature 1 */}
             <motion.div
               className="bg-surface border border-subtle rounded-2xl p-6 transition-all hover:shadow-md hover:-translate-y-0.5"
@@ -227,24 +227,24 @@ export default function Landing() {
       </div>
 
       {/* CTA Section */}
-      <div className="max-w-[1200px] mx-auto px-6 py-20">
+      <div className="max-w-[1200px] mx-auto px-6 py-12 md:py-20">
         <motion.div
-          className="rounded-2xl p-14 text-center shadow-xl"
+          className="rounded-2xl p-8 md:p-14 text-center shadow-xl"
           style={{ backgroundColor: '#1C4D2D' }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <h2 className="text-[32px] leading-[40px] font-semibold text-white mb-3">
+          <h2 className="text-[24px] leading-[32px] md:text-[32px] md:leading-[40px] font-semibold text-white mb-3">
             Close the gap. Fill the roles.
           </h2>
-          <p className="text-[18px] leading-[28px] mb-8 max-w-[560px] mx-auto" style={{ color: '#B9D8C0' }}>
+          <p className="text-[15px] leading-[24px] md:text-[18px] md:leading-[28px] mb-6 md:mb-8 max-w-[560px] mx-auto" style={{ color: '#B9D8C0' }}>
             Whether you're building a career or a data center team, mettalent connects the right talent to the right opportunity.
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center">
             <motion.button
               onClick={() => navigate('/profile')}
-              className="bg-white text-[16px] h-[52px] px-8 rounded-xl font-semibold transition-all"
+              className="bg-white text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl font-semibold transition-all w-full sm:w-auto"
               style={{ color: '#1C4D2D' }}
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
@@ -253,7 +253,7 @@ export default function Landing() {
             </motion.button>
             <motion.button
               onClick={() => navigate('/employer')}
-              className="bg-transparent text-white font-semibold text-[16px] h-[52px] px-8 rounded-xl transition-all"
+              className="bg-transparent text-white font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl transition-all w-full sm:w-auto"
               style={{ borderColor: '#5E9C72', borderWidth: '1px' }}
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
@@ -266,15 +266,15 @@ export default function Landing() {
 
       {/* Footer */}
       <footer className="bg-surface">
-        <div className="max-w-[1200px] mx-auto px-6 py-12">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="max-w-[1200px] mx-auto px-6 py-8 md:py-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
             {/* Company Info */}
-            <div className="md:col-span-1">
-              <div className="flex items-center gap-2 mb-4">
-                <img src={logo} alt="Mettalent Logo" className="h-8" />
-                <img src={textLogo} alt="Mettalent" className="h-8" />
+            <div className="col-span-2 md:col-span-1">
+              <div className="flex items-center gap-2 mb-3 md:mb-4">
+                <img src={logo} alt="Mettalent Logo" className="h-7 md:h-8" />
+                <img src={textLogo} alt="Mettalent" className="h-7 md:h-8" />
               </div>
-              <p className="text-[13px] leading-[20px] text-secondary mb-4">
+              <p className="text-[12px] md:text-[13px] leading-[18px] md:leading-[20px] text-secondary mb-3 md:mb-4">
                 Connecting talent to opportunity in the Batam-Singapore Data Center Corridor.
               </p>
               {/* Social Media Links */}
@@ -379,11 +379,11 @@ export default function Landing() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-6 border-t border-subtle flex flex-wrap gap-4 items-center justify-between">
-            <span className="text-[13px] text-muted">
+          <div className="pt-4 md:pt-6 border-t border-subtle flex flex-col sm:flex-row flex-wrap gap-2 md:gap-4 items-center justify-between">
+            <span className="text-[11px] md:text-[13px] text-muted text-center sm:text-left">
               © 2026 Mettalent. All rights reserved.
             </span>
-            <span className="text-[13px] text-muted">
+            <span className="text-[11px] md:text-[13px] text-muted text-center sm:text-right">
               Batam Singapore Hackathon 2026 · Team Rollerblade
             </span>
           </div>

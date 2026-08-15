@@ -26,7 +26,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-canvas flex items-center justify-center px-6 py-12">
+    <div className="min-h-screen bg-canvas flex items-center justify-center px-4 md:px-6 py-8 md:py-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -34,20 +34,20 @@ export default function Login() {
         className="w-full max-w-md"
       >
         {/* Logo */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-6 md:mb-8">
           <div
-            className="flex items-center justify-center gap-2 mb-4 cursor-pointer"
+            className="flex items-center justify-center gap-2 mb-3 md:mb-4 cursor-pointer"
             onClick={() => navigate('/')}
           >
-            <img src={logo} alt="Mettalent Logo" className="h-10" />
-            <img src={textLogo} alt="Mettalent" className="h-10" />
+            <img src={logo} alt="Mettalent Logo" className="h-8 md:h-10" />
+            <img src={textLogo} alt="Mettalent" className="h-8 md:h-10" />
           </div>
-          <h1 className="text-[32px] font-bold text-primary mb-2">Welcome Back</h1>
-          <p className="text-[16px] text-secondary">Sign in to continue your journey</p>
+          <h1 className="text-[24px] md:text-[32px] font-bold text-primary mb-2">Welcome Back</h1>
+          <p className="text-[14px] md:text-[16px] text-secondary">Sign in to continue your journey</p>
         </div>
 
         {/* Login Form */}
-        <div className="bg-surface rounded-2xl p-8 shadow-lg border border-subtle">
+        <div className="bg-surface rounded-2xl p-6 md:p-8 shadow-lg border border-subtle">
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label htmlFor="email" className="block text-[14px] font-medium text-primary mb-2">
