@@ -14,7 +14,7 @@
 
 ---
 
-![Landing Page](screenshots/landing-page.png)
+![Landing Page](screenshots/f1.png)
 
 ## The problem
 
@@ -30,17 +30,17 @@ Batam has drawn over IDR 120 trillion in data center investment yet remains the 
 
 ### Screenshots
 
+#### Talent Dashboard
+![Talent Dashboard](screenshots/f5.png)
+
 #### Talent Profile
-![Talent Profile](screenshots/talent-profile.png)
+![Talent Profile](screenshots/f6.png)
 
 #### Skills Gap Analysis
-![Gap Analysis](screenshots/gap-analysis.png)
-
-#### Learning Path Recommendations
-![Learning Path](screenshots/learning-path.png)
+![Gap Analysis](screenshots/f7.png)
 
 #### Employer Matching View
-![Employer View](screenshots/employer-view.png)
+![Employer View](screenshots/f8.png)
 
 ## Tech stack
 
