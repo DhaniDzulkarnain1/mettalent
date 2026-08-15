@@ -223,7 +223,7 @@ export default function GapResult() {
             </motion.button>
             <motion.button
               onClick={() => navigate('/employer')}
-              className="flex-1 bg-brand hover:bg-green-800 text-white font-semibold text-[16px] h-[52px] rounded-xl shadow-sm hover:shadow-lg transition-all"
+              className="cursor-pointer flex-1 bg-green-700 hover:bg-green-800 text-white font-semibold text-[16px] h-[52px] rounded-xl shadow-sm hover:shadow-lg transition-all"
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >
