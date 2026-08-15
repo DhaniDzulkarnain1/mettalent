@@ -1,8 +1,16 @@
-# mettalent
+<div align="center">
+  <img src="screenshots/logo.svg" alt="Mettalent Logo" width="120"/>
 
-A talent supply chain platform for the Batam–Singapore corridor. It profiles a candidate's skills, measures the gap against data center role requirements, recommends micro-credentials to close that gap, and matches ready candidates to real openings.
+  # mettalent
 
-Batam Singapore Hackathon 2026 · Track 1 / Challenge 1: Talent Bridge · Team Rollerblade, Politeknik Negeri Batam
+  A talent supply chain platform for the Batam–Singapore corridor. It profiles a candidate's skills, measures the gap against data center role requirements, recommends micro-credentials to close that gap, and matches ready candidates to real openings.
+
+  **Batam Singapore Hackathon 2026 · Track 1 / Challenge 1: Talent Bridge**
+
+  **Team Rollerblade** · Politeknik Negeri Batam
+</div>
+
+---
 
 ![Landing Page](screenshots/landing-page.png)
 
@@ -89,6 +97,7 @@ Frontend (React on Vercel) → Express API (Node.js on Vercel) → PostgreSQL (N
 
 - **Dhani Dzulkarnain** - Full Stack Developer & Team Lead
 - **Kavita Juwita Ramida** - UI/UX Designer & Frontend Developer
+- **Khairunnisa** - UI/UX Designer & Frontend Developer
 
 ## License
 
