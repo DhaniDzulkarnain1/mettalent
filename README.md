@@ -30,6 +30,18 @@ Batam has drawn over IDR 120 trillion in data center investment yet remains the 
 
 ### Screenshots
 
+#### Landing Page
+![Landing Page](screenshots/f1.png)
+
+#### About Page
+![About Page](screenshots/f2.png)
+
+#### Login
+![Login](screenshots/f3.png)
+
+#### Register
+![Register](screenshots/f4.png)
+
 #### Talent Dashboard
 ![Talent Dashboard](screenshots/f5.png)
 
