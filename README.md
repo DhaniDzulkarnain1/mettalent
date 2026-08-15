@@ -24,9 +24,9 @@ Batam has drawn over IDR 120 trillion in data center investment yet remains the 
 | --- | --- |
 | Frontend | React (Vite), Tailwind CSS, Framer Motion |
 | Backend | Node.js, Express |
-| ML | Python, FastAPI, scikit-learn (weighted cosine similarity, explainable) |
+| ML | Cosine similarity (integrated in Node.js backend) |
 | Database | PostgreSQL |
-| Deploy | Google Cloud Platform (Cloud Run) |
+| Deploy | Vercel (Frontend + Backend), Neon (PostgreSQL) |
 
 ## Running locally
 
@@ -49,17 +49,17 @@ cd backend && npm run dev          # :3000
 cd frontend && npm install && npm run dev   # :5173
 ```
 
-Live demo: `<live-url>` · Demo video: `<video-url>`
+**Live demo:** https://mettalent.org · **Demo video:** `<your-youtube-url-here>`
 
 ## Architecture
 
-Frontend to Express API to a FastAPI matching service to PostgreSQL. See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). Matching uses explainable weighted cosine similarity, every score can be justified, with no training data and no black box.
+Frontend (React on Vercel) → Express API (Node.js on Vercel) → PostgreSQL (Neon). ML matching logic integrated directly in backend using cosine similarity algorithm. Every score is explainable with no black box.
 
 ## Disclosure
 
 **AI tools.** This project was built with the help of Claude Code (Anthropic) during the hackathon window. The planning documents (problem statement, PRD, architecture) were drafted with Claude's assistance.
 
-**ML models and libraries.** scikit-learn (cosine similarity). No third-party pre-trained models.
+**ML models and libraries.** Custom cosine similarity implementation in Node.js. No external ML libraries or pre-trained models used.
 
 **Dataset.** The seed data (skill taxonomy, role requirements, openings, courses, and talent profiles) was curated by the team before the event from public sources:
 
