@@ -1,0 +1,152 @@
+[
+  {
+    "id": "networking-fundamentals",
+    "name": "Networking Fundamentals",
+    "category": "network"
+  },
+  {
+    "id": "routing-switching",
+    "name": "Routing and Switching",
+    "category": "network"
+  },
+  {
+    "id": "tcp-ip",
+    "name": "TCP/IP",
+    "category": "network"
+  },
+  {
+    "id": "network-monitoring",
+    "name": "Network Monitoring",
+    "category": "network"
+  },
+  {
+    "id": "cloud-networking",
+    "name": "Cloud Networking",
+    "category": "network"
+  },
+  {
+    "id": "load-balancing",
+    "name": "Load Balancing",
+    "category": "network"
+  },
+  {
+    "id": "dns-management",
+    "name": "DNS Management",
+    "category": "network"
+  },
+  {
+    "id": "cloud-fundamentals",
+    "name": "Cloud Fundamentals",
+    "category": "cloud"
+  },
+  {
+    "id": "containerization",
+    "name": "Containerization (Docker)",
+    "category": "cloud"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "category": "cloud"
+  },
+  {
+    "id": "iac",
+    "name": "Infrastructure as Code (Terraform)",
+    "category": "cloud"
+  },
+  {
+    "id": "linux-administration",
+    "name": "Linux Administration",
+    "category": "cloud"
+  },
+  {
+    "id": "ci-cd",
+    "name": "CI/CD",
+    "category": "cloud"
+  },
+  {
+    "id": "security-fundamentals",
+    "name": "Security Fundamentals",
+    "category": "security"
+  },
+  {
+    "id": "network-security",
+    "name": "Network Security",
+    "category": "security"
+  },
+  {
+    "id": "access-management",
+    "name": "Identity and Access Management",
+    "category": "security"
+  },
+  {
+    "id": "incident-response",
+    "name": "Incident Response",
+    "category": "security"
+  },
+  {
+    "id": "vulnerability-management",
+    "name": "Vulnerability Management",
+    "category": "security"
+  },
+  {
+    "id": "data-center-operations",
+    "name": "Data Center Operations",
+    "category": "facility"
+  },
+  {
+    "id": "power-cooling-systems",
+    "name": "Power and Cooling Systems",
+    "category": "facility"
+  },
+  {
+    "id": "hvac-fundamentals",
+    "name": "HVAC Fundamentals",
+    "category": "facility"
+  },
+  {
+    "id": "cabling-infrastructure",
+    "name": "Structured Cabling",
+    "category": "facility"
+  },
+  {
+    "id": "environmental-monitoring",
+    "name": "Environmental Monitoring",
+    "category": "facility"
+  },
+  {
+    "id": "physical-security",
+    "name": "Physical Security",
+    "category": "facility"
+  },
+  {
+    "id": "capacity-planning",
+    "name": "Capacity Planning",
+    "category": "facility"
+  },
+  {
+    "id": "python-programming",
+    "name": "Python Programming",
+    "category": "ai"
+  },
+  {
+    "id": "ml-fundamentals",
+    "name": "Machine Learning Fundamentals",
+    "category": "ai"
+  },
+  {
+    "id": "data-pipelines",
+    "name": "Data Pipelines",
+    "category": "ai"
+  },
+  {
+    "id": "gpu-infrastructure",
+    "name": "GPU Infrastructure",
+    "category": "ai"
+  },
+  {
+    "id": "mlops",
+    "name": "MLOps",
+    "category": "ai"
+  }
+]

@@ -1,0 +1,121 @@
+:root {
+  --color-green-50: #F0F7F2;
+  --color-green-100: #DCECDF;
+  --color-green-200: #B9D8C0;
+  --color-green-300: #8CBC99;
+  --color-green-400: #5E9C72;
+  --color-green-500: #347B4E;
+  --color-green-600: #1C4D2D;
+  --color-green-700: #173F26;
+  --color-green-800: #143321;
+  --color-green-900: #102A1B;
+  --color-green-950: #08170E;
+
+  --color-neutral-0: #FFFFFF;
+  --color-neutral-50: #F8FAF9;
+  --color-neutral-100: #F0F3F1;
+  --color-neutral-200: #E1E7E3;
+  --color-neutral-300: #C9D2CC;
+  --color-neutral-400: #9AA9A0;
+  --color-neutral-500: #6F8176;
+  --color-neutral-600: #536258;
+  --color-neutral-700: #3D4941;
+  --color-neutral-800: #27312B;
+  --color-neutral-900: #18201B;
+  --color-neutral-950: #0D120F;
+  --color-neutral-1000: #000000;
+
+  --color-red-100: #FEE2E2;
+  --color-red-600: #DC2626;
+  --color-red-900: #7F1D1D;
+  --color-amber-100: #FEF3C7;
+  --color-amber-600: #D97706;
+  --color-amber-900: #78350F;
+  --color-blue-100: #DBEAFE;
+  --color-blue-600: #2563EB;
+  --color-blue-900: #1E3A8A;
+
+  --color-bg-canvas: var(--color-neutral-50);
+  --color-bg-surface: var(--color-neutral-0);
+  --color-bg-subtle: var(--color-neutral-100);
+  --color-bg-strong: var(--color-neutral-900);
+  --color-bg-brand: var(--color-green-600);
+  --color-bg-brand-hover: var(--color-green-700);
+  --color-bg-brand-subtle: var(--color-green-100);
+  --color-bg-disabled: var(--color-neutral-200);
+  --color-bg-success: var(--color-green-100);
+  --color-bg-warning: var(--color-amber-100);
+  --color-bg-danger: var(--color-red-100);
+  --color-bg-info: var(--color-blue-100);
+
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-600);
+  --color-text-muted: var(--color-neutral-500);
+  --color-text-disabled: var(--color-neutral-400);
+  --color-text-brand: var(--color-green-700);
+  --color-text-on-brand: var(--color-neutral-0);
+  --color-text-inverse: var(--color-neutral-0);
+  --color-text-success: var(--color-green-700);
+  --color-text-warning: var(--color-amber-900);
+  --color-text-danger: var(--color-red-900);
+  --color-text-info: var(--color-blue-600);
+
+  --color-icon-primary: var(--color-neutral-800);
+  --color-icon-secondary: var(--color-neutral-500);
+  --color-icon-brand: var(--color-green-600);
+  --color-icon-on-brand: var(--color-neutral-0);
+
+  --color-border-default: var(--color-neutral-300);
+  --color-border-subtle: var(--color-neutral-200);
+  --color-border-strong: var(--color-neutral-500);
+  --color-border-brand: var(--color-green-600);
+  --color-border-focus: var(--color-green-500);
+  --color-border-disabled: var(--color-neutral-300);
+  --color-border-success: var(--color-green-600);
+  --color-border-warning: var(--color-amber-600);
+  --color-border-danger: var(--color-red-600);
+  --color-border-info: var(--color-blue-600);
+}
+
+[data-theme="dark"] {
+  --color-bg-canvas: var(--color-neutral-950);
+  --color-bg-surface: var(--color-neutral-900);
+  --color-bg-subtle: var(--color-neutral-800);
+  --color-bg-strong: var(--color-neutral-100);
+  --color-bg-brand: var(--color-green-400);
+  --color-bg-brand-hover: var(--color-green-300);
+  --color-bg-brand-subtle: var(--color-green-900);
+  --color-bg-disabled: var(--color-neutral-700);
+  --color-bg-success: var(--color-green-900);
+  --color-bg-warning: var(--color-amber-900);
+  --color-bg-danger: var(--color-red-900);
+  --color-bg-info: var(--color-blue-900);
+
+  --color-text-primary: var(--color-neutral-50);
+  --color-text-secondary: var(--color-neutral-300);
+  --color-text-muted: var(--color-neutral-400);
+  --color-text-disabled: var(--color-neutral-600);
+  --color-text-brand: var(--color-green-300);
+  --color-text-on-brand: var(--color-green-950);
+  --color-text-inverse: var(--color-neutral-950);
+  --color-text-success: var(--color-green-300);
+  --color-text-warning: var(--color-amber-100);
+  --color-text-danger: var(--color-red-100);
+  --color-text-info: var(--color-blue-100);
+
+  --color-icon-primary: var(--color-neutral-100);
+  --color-icon-secondary: var(--color-neutral-400);
+  --color-icon-brand: var(--color-green-300);
+  --color-icon-on-brand: var(--color-green-950);
+
+  --color-border-default: var(--color-neutral-700);
+  --color-border-subtle: var(--color-neutral-800);
+  --color-border-strong: var(--color-neutral-400);
+  --color-border-brand: var(--color-green-400);
+  --color-border-focus: var(--color-green-300);
+  --color-border-disabled: var(--color-neutral-700);
+  --color-border-success: var(--color-green-400);
+  --color-border-warning: var(--color-amber-100);
+  --color-border-danger: var(--color-red-100);
+  --color-border-info: var(--color-blue-100);
+}

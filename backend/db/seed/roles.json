@@ -1,0 +1,27 @@
+[
+  {
+    "id": "network-ops",
+    "name": "Network Operations",
+    "description": "Operate and monitor data center network infrastructure, routing, and connectivity."
+  },
+  {
+    "id": "cloud-engineer",
+    "name": "Cloud Engineer",
+    "description": "Build and run containerized cloud workloads and infrastructure automation."
+  },
+  {
+    "id": "security-analyst",
+    "name": "Cybersecurity Analyst",
+    "description": "Protect data center systems: monitoring, access control, and incident response."
+  },
+  {
+    "id": "facility-tech",
+    "name": "Data Center Facility Technician",
+    "description": "Maintain power, cooling, cabling, and physical data center operations."
+  },
+  {
+    "id": "ai-infra",
+    "name": "AI Infrastructure Engineer",
+    "description": "Operate GPU clusters and MLOps pipelines for AI data center workloads."
+  }
+]

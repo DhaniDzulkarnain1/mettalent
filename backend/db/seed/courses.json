@@ -1,0 +1,170 @@
+[
+  {
+    "id": "c1",
+    "name": "Cloud Networking Essentials",
+    "provider": "Google Cloud Skills Boost",
+    "duration": "12h",
+    "teachesSkillId": "cloud-networking"
+  },
+  {
+    "id": "c2",
+    "name": "Security Fundamentals",
+    "provider": "CompTIA Security+",
+    "duration": "20h",
+    "teachesSkillId": "security-fundamentals"
+  },
+  {
+    "id": "c3",
+    "name": "Load Balancing and Traffic Management",
+    "provider": "NGINX Academy",
+    "duration": "6h",
+    "teachesSkillId": "load-balancing"
+  },
+  {
+    "id": "c4",
+    "name": "Network Monitoring with SNMP",
+    "provider": "Cisco Networking Academy",
+    "duration": "8h",
+    "teachesSkillId": "network-monitoring"
+  },
+  {
+    "id": "c5",
+    "name": "Incident Response Basics",
+    "provider": "Fortinet Training",
+    "duration": "10h",
+    "teachesSkillId": "incident-response"
+  },
+  {
+    "id": "c6",
+    "name": "Networking Fundamentals",
+    "provider": "Cisco CCNA",
+    "duration": "40h",
+    "teachesSkillId": "networking-fundamentals"
+  },
+  {
+    "id": "c7",
+    "name": "Routing and Switching",
+    "provider": "Cisco CCNA",
+    "duration": "30h",
+    "teachesSkillId": "routing-switching"
+  },
+  {
+    "id": "c8",
+    "name": "Cloud Fundamentals",
+    "provider": "Google Cloud Digital Leader",
+    "duration": "15h",
+    "teachesSkillId": "cloud-fundamentals"
+  },
+  {
+    "id": "c9",
+    "name": "Docker and Containers",
+    "provider": "Linux Foundation",
+    "duration": "12h",
+    "teachesSkillId": "containerization"
+  },
+  {
+    "id": "c10",
+    "name": "Kubernetes Administration (CKA)",
+    "provider": "CNCF",
+    "duration": "35h",
+    "teachesSkillId": "kubernetes"
+  },
+  {
+    "id": "c11",
+    "name": "Terraform Infrastructure as Code",
+    "provider": "HashiCorp Learn",
+    "duration": "14h",
+    "teachesSkillId": "iac"
+  },
+  {
+    "id": "c12",
+    "name": "Linux Administration",
+    "provider": "Linux Foundation LFCS",
+    "duration": "30h",
+    "teachesSkillId": "linux-administration"
+  },
+  {
+    "id": "c13",
+    "name": "CI/CD Pipelines",
+    "provider": "GitLab Learn",
+    "duration": "8h",
+    "teachesSkillId": "ci-cd"
+  },
+  {
+    "id": "c14",
+    "name": "Network Security",
+    "provider": "Fortinet NSE",
+    "duration": "18h",
+    "teachesSkillId": "network-security"
+  },
+  {
+    "id": "c15",
+    "name": "Identity and Access Management",
+    "provider": "AWS Skill Builder",
+    "duration": "10h",
+    "teachesSkillId": "access-management"
+  },
+  {
+    "id": "c16",
+    "name": "Vulnerability Management",
+    "provider": "CompTIA CySA+",
+    "duration": "16h",
+    "teachesSkillId": "vulnerability-management"
+  },
+  {
+    "id": "c17",
+    "name": "Data Center Operations (CDCP)",
+    "provider": "EPI",
+    "duration": "24h",
+    "teachesSkillId": "data-center-operations"
+  },
+  {
+    "id": "c18",
+    "name": "Power and Cooling Systems",
+    "provider": "Uptime Institute",
+    "duration": "20h",
+    "teachesSkillId": "power-cooling-systems"
+  },
+  {
+    "id": "c19",
+    "name": "HVAC Fundamentals for Data Centers",
+    "provider": "Uptime Institute",
+    "duration": "16h",
+    "teachesSkillId": "hvac-fundamentals"
+  },
+  {
+    "id": "c20",
+    "name": "Structured Cabling",
+    "provider": "BICSI",
+    "duration": "18h",
+    "teachesSkillId": "cabling-infrastructure"
+  },
+  {
+    "id": "c21",
+    "name": "Python for Infrastructure",
+    "provider": "Coursera",
+    "duration": "20h",
+    "teachesSkillId": "python-programming"
+  },
+  {
+    "id": "c22",
+    "name": "Machine Learning Fundamentals",
+    "provider": "Coursera",
+    "duration": "30h",
+    "teachesSkillId": "ml-fundamentals"
+  },
+  {
+    "id": "c23",
+    "name": "GPU Infrastructure for AI",
+    "provider": "NVIDIA DLI",
+    "duration": "12h",
+    "teachesSkillId": "gpu-infrastructure"
+  },
+  {
+    "id": "c24",
+    "name": "MLOps Foundations",
+    "provider": "Google Cloud Skills Boost",
+    "duration": "18h",
+    "teachesSkillId": "mlops"
+  }
+]

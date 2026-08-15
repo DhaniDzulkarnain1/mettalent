@@ -1,0 +1,217 @@
+[
+  {
+    "roleId": "network-ops",
+    "skillId": "networking-fundamentals",
+    "weight": 3
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "routing-switching",
+    "weight": 3
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "tcp-ip",
+    "weight": 3
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "network-monitoring",
+    "weight": 3
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "cloud-networking",
+    "weight": 3
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "security-fundamentals",
+    "weight": 3
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "load-balancing",
+    "weight": 2
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "dns-management",
+    "weight": 2
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "linux-administration",
+    "weight": 2
+  },
+  {
+    "roleId": "network-ops",
+    "skillId": "incident-response",
+    "weight": 1
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "cloud-fundamentals",
+    "weight": 3
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "linux-administration",
+    "weight": 3
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "containerization",
+    "weight": 3
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "kubernetes",
+    "weight": 3
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "iac",
+    "weight": 2
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "ci-cd",
+    "weight": 2
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "networking-fundamentals",
+    "weight": 2
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "cloud-networking",
+    "weight": 2
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "python-programming",
+    "weight": 1
+  },
+  {
+    "roleId": "security-analyst",
+    "skillId": "security-fundamentals",
+    "weight": 3
+  },
+  {
+    "roleId": "security-analyst",
+    "skillId": "network-security",
+    "weight": 3
+  },
+  {
+    "roleId": "security-analyst",
+    "skillId": "access-management",
+    "weight": 3
+  },
+  {
+    "roleId": "security-analyst",
+    "skillId": "incident-response",
+    "weight": 3
+  },
+  {
+    "roleId": "security-analyst",
+    "skillId": "vulnerability-management",
+    "weight": 2
+  },
+  {
+    "roleId": "security-analyst",
+    "skillId": "networking-fundamentals",
+    "weight": 2
+  },
+  {
+    "roleId": "security-analyst",
+    "skillId": "linux-administration",
+    "weight": 2
+  },
+  {
+    "roleId": "security-analyst",
+    "skillId": "tcp-ip",
+    "weight": 1
+  },
+  {
+    "roleId": "facility-tech",
+    "skillId": "data-center-operations",
+    "weight": 3
+  },
+  {
+    "roleId": "facility-tech",
+    "skillId": "power-cooling-systems",
+    "weight": 3
+  },
+  {
+    "roleId": "facility-tech",
+    "skillId": "hvac-fundamentals",
+    "weight": 3
+  },
+  {
+    "roleId": "facility-tech",
+    "skillId": "cabling-infrastructure",
+    "weight": 2
+  },
+  {
+    "roleId": "facility-tech",
+    "skillId": "environmental-monitoring",
+    "weight": 2
+  },
+  {
+    "roleId": "facility-tech",
+    "skillId": "capacity-planning",
+    "weight": 2
+  },
+  {
+    "roleId": "facility-tech",
+    "skillId": "physical-security",
+    "weight": 2
+  },
+  {
+    "roleId": "facility-tech",
+    "skillId": "networking-fundamentals",
+    "weight": 1
+  },
+  {
+    "roleId": "ai-infra",
+    "skillId": "python-programming",
+    "weight": 3
+  },
+  {
+    "roleId": "ai-infra",
+    "skillId": "ml-fundamentals",
+    "weight": 3
+  },
+  {
+    "roleId": "ai-infra",
+    "skillId": "gpu-infrastructure",
+    "weight": 3
+  },
+  {
+    "roleId": "ai-infra",
+    "skillId": "mlops",
+    "weight": 3
+  },
+  {
+    "roleId": "ai-infra",
+    "skillId": "data-pipelines",
+    "weight": 2
+  },
+  {
+    "roleId": "ai-infra",
+    "skillId": "kubernetes",
+    "weight": 2
+  },
+  {
+    "roleId": "ai-infra",
+    "skillId": "linux-administration",
+    "weight": 2
+  },
+  {
+    "roleId": "ai-infra",
+    "skillId": "cloud-fundamentals",
+    "weight": 2
+  }
+]
