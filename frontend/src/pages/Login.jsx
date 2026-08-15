@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo from '../assets/Mettalent.svg';
 import textLogo from '../assets/blackk.svg';
+import Toast from '../components/Toast';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -10,12 +11,14 @@ export default function Login() {
     email: '',
     password: ''
   });
+  const [toast, setToast] = useState({ show: false, message: '', type: 'success' });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Demo: just navigate to profile page
-    alert('Login successful! (Demo mode)');
-    navigate('/profile');
+    setToast({ show: true, message: 'Login successful! Redirecting...', type: 'success' });
+    setTimeout(() => {
+      navigate('/profile');
+    }, 1500);
   };
 
   const handleChange = (e) => {
@@ -148,6 +151,13 @@ export default function Login() {
           </button>
         </div>
       </motion.div>
+
+      <Toast
+        message={toast.message}
+        type={toast.type}
+        isVisible={toast.show}
+        onClose={() => setToast({ ...toast, show: false })}
+      />
     </div>
   );
 }

@@ -39,37 +39,41 @@ export default function StatsCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full max-w-sm mx-auto">
-      <div className="h-32 flex items-center justify-center">
+    <div className="relative w-full">
+      <div className="h-40 flex items-center justify-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, y: -20 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-center"
           >
-            <div className={`text-[48px] leading-[56px] font-bold ${stats[current].color}`}>
+            <motion.div
+              className="text-[64px] leading-[72px] font-bold text-white"
+              animate={{ scale: [1, 1.05, 1] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
               {stats[current].number}
               {stats[current].unit && (
-                <span className="text-[20px] ml-2">{stats[current].unit}</span>
+                <span className="text-[24px] ml-3 opacity-90">{stats[current].unit}</span>
               )}
-            </div>
-            <div className="text-[14px] leading-[20px] text-secondary mt-2">
+            </motion.div>
+            <div className="text-[16px] leading-[24px] text-white/80 mt-3 font-medium">
               {stats[current].label}
             </div>
           </motion.div>
         </AnimatePresence>
       </div>
 
-      <div className="flex justify-center gap-2 mt-4">
+      <div className="flex justify-center gap-3 mt-6">
         {stats.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === current ? 'bg-brand w-6' : 'bg-subtle'
+            className={`h-2 rounded-full transition-all duration-300 ${
+              index === current ? 'bg-white w-8' : 'bg-white/30 w-2'
             }`}
           />
         ))}

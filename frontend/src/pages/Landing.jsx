@@ -92,32 +92,47 @@ export default function Landing() {
       {/* The Challenge Section */}
       <div className="bg-canvas">
         <div className="max-w-[1200px] mx-auto px-6 py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-[900px] mx-auto"
-          >
-            <div className="text-center mb-12">
-              <h2 className="text-[36px] leading-[44px] font-bold text-primary mb-4">
-                The Challenge We Solve
-              </h2>
-              <p className="text-[18px] leading-[28px] text-secondary max-w-[600px] mx-auto">
-                A broken talent supply chain between campuses, certification, and industry. Here's what the data shows:
-              </p>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-[40px] leading-[48px] font-bold text-primary">
+              The Challenge We Solve
+            </h2>
+          </div>
 
-            <div className="bg-surface rounded-2xl p-12 shadow-xl border border-subtle">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Stats Card with Green Background */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="rounded-3xl p-12 shadow-2xl"
+              style={{ backgroundColor: '#1C4D2D' }}
+            >
               <StatsCarousel />
+            </motion.div>
 
-              <div className="mt-10 pt-8 border-t border-subtle text-center">
-                <p className="text-[17px] leading-[26px] text-secondary max-w-[500px] mx-auto">
+            {/* Right Column - Problem Statement */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="rounded-3xl p-10 shadow-2xl"
+              style={{
+                background: 'linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 50%, #A5D6A7 100%)',
+                border: '1px solid rgba(28, 77, 45, 0.1)'
+              }}
+            >
+              <div className="space-y-8">
+                <p className="text-[26px] leading-[38px] font-medium" style={{ color: '#2E5539' }}>
                   A broken talent supply chain between campuses, certification, and industry.
-                  <span className="block mt-3 text-[18px] font-semibold text-primary">We fix that.</span>
                 </p>
+                <div className="pt-4">
+                  <p className="text-[36px] leading-[44px] font-bold" style={{ color: '#1C4D2D' }}>
+                    We fix that.
+                  </p>
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </div>
 

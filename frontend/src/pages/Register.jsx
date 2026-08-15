@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo from '../assets/Mettalent.svg';
 import textLogo from '../assets/blackk.svg';
+import Toast from '../components/Toast';
 
 export default function Register() {
   const navigate = useNavigate();
@@ -13,16 +14,18 @@ export default function Register() {
     confirmPassword: '',
     userType: 'talent'
   });
+  const [toast, setToast] = useState({ show: false, message: '', type: 'success' });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
-      alert('Passwords do not match!');
+      setToast({ show: true, message: 'Passwords do not match!', type: 'error' });
       return;
     }
-    // Demo: just navigate to profile page
-    alert('Registration successful! (Demo mode)');
-    navigate('/profile');
+    setToast({ show: true, message: 'Registration successful! Redirecting...', type: 'success' });
+    setTimeout(() => {
+      navigate('/profile');
+    }, 1500);
   };
 
   const handleChange = (e) => {
@@ -229,6 +232,13 @@ export default function Register() {
           </button>
         </div>
       </motion.div>
+
+      <Toast
+        message={toast.message}
+        type={toast.type}
+        isVisible={toast.show}
+        onClose={() => setToast({ ...toast, show: false })}
+      />
     </div>
   );
 }
