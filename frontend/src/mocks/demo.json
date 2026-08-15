@@ -1,0 +1,102 @@
+{
+  "talent": {
+    "id": "t1",
+    "name": "Budi Santoso",
+    "education": "SMK Teknik Komputer dan Jaringan (TKJ), Batam",
+    "skills": [
+      {
+        "skillId": "networking-fundamentals",
+        "name": "Networking Fundamentals",
+        "category": "network",
+        "proficiency": 2
+      },
+      {
+        "skillId": "routing-switching",
+        "name": "Routing and Switching",
+        "category": "network",
+        "proficiency": 2
+      },
+      {
+        "skillId": "tcp-ip",
+        "name": "TCP/IP",
+        "category": "network",
+        "proficiency": 2
+      },
+      {
+        "skillId": "dns-management",
+        "name": "DNS Management",
+        "category": "network",
+        "proficiency": 1
+      },
+      {
+        "skillId": "linux-administration",
+        "name": "Linux Administration",
+        "category": "cloud",
+        "proficiency": 1
+      }
+    ]
+  },
+  "gapResult": {
+    "readiness": 0.52,
+    "have": [
+      {
+        "skillId": "networking-fundamentals",
+        "name": "Networking Fundamentals",
+        "proficiency": 2
+      },
+      {
+        "skillId": "routing-switching",
+        "name": "Routing and Switching",
+        "proficiency": 2
+      },
+      {
+        "skillId": "tcp-ip",
+        "name": "TCP/IP",
+        "proficiency": 2
+      },
+      {
+        "skillId": "dns-management",
+        "name": "DNS Management",
+        "proficiency": 1
+      },
+      {
+        "skillId": "linux-administration",
+        "name": "Linux Administration",
+        "proficiency": 1
+      }
+    ],
+    "gaps": [
+      {
+        "skillId": "network-monitoring",
+        "name": "Network Monitoring",
+        "weight": 3,
+        "reason": "Required for role"
+      },
+      {
+        "skillId": "cloud-networking",
+        "name": "Cloud Networking",
+        "weight": 3,
+        "reason": "Required for role"
+      },
+      {
+        "skillId": "security-fundamentals",
+        "name": "Security Fundamentals",
+        "weight": 3,
+        "reason": "Required for role"
+      },
+      {
+        "skillId": "load-balancing",
+        "name": "Load Balancing",
+        "weight": 2,
+        "reason": "Required for role"
+      },
+      {
+        "skillId": "incident-response",
+        "name": "Incident Response",
+        "weight": 1,
+        "reason": "Required for role"
+      }
+    ],
+    "explanation": "Covers 5/10 required skills; largest gap: Network Monitoring"
+  }
+}
