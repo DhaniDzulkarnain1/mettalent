@@ -4,7 +4,7 @@ A talent supply chain platform for the Batam–Singapore corridor. It profiles a
 
 Batam Singapore Hackathon 2026 · Track 1 / Challenge 1: Talent Bridge · Team Rollerblade, Politeknik Negeri Batam
 
-> Replace the `<...>` placeholders before final submission.
+![Landing Page](screenshots/landing-page.png)
 
 ## The problem
 
@@ -12,11 +12,25 @@ Batam has drawn over IDR 120 trillion in data center investment yet remains the 
 
 ## Features
 
-- Talent profile (skills and education)
-- Skill gap engine: readiness score and missing skills per data center role
-- Learning path: micro-credential recommendations that close gaps
-- Matching between talent and openings (Batam and Singapore)
-- Employer view: ranked candidates per role
+- **Talent profile** (skills and education)
+- **Skill gap engine**: readiness score and missing skills per data center role
+- **Learning path**: micro-credential recommendations that close gaps
+- **Matching** between talent and openings (Batam and Singapore)
+- **Employer view**: ranked candidates per role
+
+### Screenshots
+
+#### Talent Profile
+![Talent Profile](screenshots/talent-profile.png)
+
+#### Skills Gap Analysis
+![Gap Analysis](screenshots/gap-analysis.png)
+
+#### Learning Path Recommendations
+![Learning Path](screenshots/learning-path.png)
+
+#### Employer Matching View
+![Employer View](screenshots/employer-view.png)
 
 ## Tech stack
 
@@ -67,11 +81,14 @@ Frontend (React on Vercel) → Express API (Node.js on Vercel) → PostgreSQL (N
 - Company and job names: publicly announced Batam data center projects (for example DayOne, NeutraDC, Princeton Digital Group).
 - Talent profiles: synthetic, created by the team for the demo, not real personal data.
 
-**Pre-existing code.** `<list any boilerplate prepared before the event, e.g. create-vite or express init output, or state "none; all code written within the window">`.
+**Pre-existing code.** Standard boilerplate from create-vite for React frontend setup and Express.js initialization for backend API. All business logic, UI components, database schema, and matching algorithms were written during the hackathon window.
 
 ## Team
 
-Rollerblade, `<member names and roles>`.
+**Team Rollerblade** - Politeknik Negeri Batam
+
+- **Dhani Dzulkarnain** - Full Stack Developer & Team Lead
+- **Kavita Juwita Ramida** - UI/UX Designer & Frontend Developer
 
 ## License
 
