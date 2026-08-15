@@ -212,10 +212,10 @@ export default function GapResult() {
             </motion.div>
           )}
 
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <motion.button
               onClick={() => navigate('/profile')}
-              className="flex-1 bg-surface hover:bg-subtle hover:shadow-md text-primary font-semibold text-[16px] h-[52px] rounded-xl border border-default transition-all"
+              className="cursor-pointer flex-1 bg-white hover:bg-gray-50 text-gray-900 font-semibold text-[16px] h-[52px] rounded-xl border border-gray-300 hover:shadow-md transition-all"
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >
@@ -223,9 +223,9 @@ export default function GapResult() {
             </motion.button>
             <motion.button
               onClick={() => navigate('/employer')}
-              className="cursor-pointer flex-1 bg-green-700 hover:bg-green-800 text-white font-semibold text-[16px] h-[52px] rounded-xl shadow-sm hover:shadow-lg transition-all"
-              whileHover={{ scale: 1.01, y: -1 }}
-              whileTap={{ scale: 0.99 }}
+              className="cursor-pointer flex-1 bg-green-700 hover:bg-green-800 text-white font-semibold text-[16px] h-[52px] rounded-xl shadow-md hover:shadow-lg transition-all"
+              whileHover={{ scale: 1.02, y: -2 }}
+              whileTap={{ scale: 0.98 }}
             >
               View as Employer →
             </motion.button>
