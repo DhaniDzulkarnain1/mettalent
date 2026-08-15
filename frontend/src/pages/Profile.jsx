@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { api } from '../lib/api';
 
 export default function Profile() {
@@ -41,12 +42,27 @@ export default function Profile() {
 
   return (
     <div className="min-h-screen bg-canvas py-16 px-8">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-[32px] leading-[40px] font-semibold text-primary mb-8">
+      <motion.div
+        className="max-w-3xl mx-auto"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.h1
+          className="text-[32px] leading-[40px] font-semibold text-primary mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           Talent Profile
-        </h1>
+        </motion.h1>
 
-        <div className="bg-surface rounded-lg p-6 shadow-sm border border-subtle mb-8">
+        <motion.div
+          className="bg-surface rounded-lg p-6 shadow-sm border border-subtle mb-8"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+        >
           <h2 className="text-[24px] leading-[32px] font-semibold text-primary mb-2">
             {talent?.name}
           </h2>
@@ -58,18 +74,26 @@ export default function Profile() {
             Current Skills
           </h3>
           <div className="flex flex-wrap gap-2">
-            {talent?.skills.map((skill) => (
-              <div
+            {talent?.skills.map((skill, index) => (
+              <motion.div
                 key={skill.skillId}
                 className="bg-brand-subtle text-brand text-[12px] font-medium px-3 py-1 rounded-pill"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: 0.3 + index * 0.05 }}
               >
                 {skill.name} ({skill.proficiency}/3)
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
-        <div className="bg-surface rounded-lg p-6 shadow-sm border border-subtle mb-8">
+        <motion.div
+          className="bg-surface rounded-lg p-6 shadow-sm border border-subtle mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+        >
           <label className="block text-[12px] leading-[16px] font-medium text-primary mb-2">
             Select Role to Analyze
           </label>
@@ -84,15 +108,20 @@ export default function Profile() {
               </option>
             ))}
           </select>
-        </div>
+        </motion.div>
 
-        <button
+        <motion.button
           onClick={handleAnalyze}
           className="w-full bg-brand hover:bg-brand-hover text-on-brand font-medium text-[16px] h-[52px] rounded-md transition-colors duration-150"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
         >
           Analyze Readiness
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { api } from '../lib/api';
 
 export default function Employer() {
@@ -39,12 +40,27 @@ export default function Employer() {
 
   return (
     <div className="min-h-screen bg-canvas py-16 px-8">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-[32px] leading-[40px] font-semibold text-primary mb-8">
+      <motion.div
+        className="max-w-6xl mx-auto"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.h1
+          className="text-[32px] leading-[40px] font-semibold text-primary mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
           Talent Matching
-        </h1>
+        </motion.h1>
 
-        <div className="grid md:grid-cols-2 gap-4 mb-8">
+        <motion.div
+          className="grid md:grid-cols-2 gap-4 mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+        >
           <div>
             <label className="block text-[12px] leading-[16px] font-medium text-primary mb-2">
               Role
@@ -75,22 +91,30 @@ export default function Employer() {
               <option value="singapore">Singapore</option>
             </select>
           </div>
-        </div>
+        </motion.div>
 
         {loading ? (
           <div className="text-center py-16 text-secondary">
             Loading candidates...
           </div>
         ) : (
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             <h2 className="text-[24px] leading-[32px] font-semibold text-primary mb-4">
               Ranked Candidates ({matches.length})
             </h2>
             <div className="space-y-4">
               {matches.slice(0, 20).map((match, index) => (
-                <div
+                <motion.div
                   key={match.talentId}
                   className="bg-surface rounded-lg p-6 shadow-sm border border-subtle hover:border-brand transition-colors"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.4, delay: 0.4 + index * 0.05 }}
+                  whileHover={{ scale: 1.01 }}
                 >
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-4">
@@ -161,21 +185,28 @@ export default function Employer() {
                       </div>
                     )}
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
         )}
 
-        <div className="mt-8">
-          <button
+        <motion.div
+          className="mt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.6 }}
+        >
+          <motion.button
             onClick={() => navigate('/')}
             className="bg-surface hover:bg-subtle text-primary font-medium text-[16px] h-[52px] px-[28px] border border-default rounded-md transition-colors duration-150"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             Back to Landing
-          </button>
-        </div>
-      </div>
+          </motion.button>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
