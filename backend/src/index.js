@@ -27,6 +27,23 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// Health check endpoint
+app.get('/', (req, res) => {
+  res.json({
+    status: 'OK',
+    message: 'Mettalent API is running',
+    version: '1.0.0',
+    endpoints: {
+      talents: '/api/talents',
+      roles: '/api/roles',
+      jobs: '/api/jobs',
+      courses: '/api/courses',
+      gap: '/api/gap',
+      match: '/api/match'
+    }
+  });
+});
+
 app.use('/api/talents', talentsRouter);
 app.use('/api/roles', rolesRouter);
 app.use('/api/jobs', jobsRouter);
