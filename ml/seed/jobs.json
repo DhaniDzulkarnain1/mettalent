@@ -1,0 +1,100 @@
+[
+  {
+    "id": "j1",
+    "title": "Network Operations Engineer",
+    "company": "DayOne",
+    "location": "batam",
+    "roleId": "network-ops"
+  },
+  {
+    "id": "j2",
+    "title": "Cloud Infrastructure Engineer",
+    "company": "DayOne",
+    "location": "batam",
+    "roleId": "cloud-engineer"
+  },
+  {
+    "id": "j3",
+    "title": "Data Center Facility Technician",
+    "company": "DayOne",
+    "location": "batam",
+    "roleId": "facility-tech"
+  },
+  {
+    "id": "j4",
+    "title": "Facility Operations Technician",
+    "company": "NeutraDC",
+    "location": "batam",
+    "roleId": "facility-tech"
+  },
+  {
+    "id": "j5",
+    "title": "Security Operations Analyst",
+    "company": "NeutraDC",
+    "location": "batam",
+    "roleId": "security-analyst"
+  },
+  {
+    "id": "j6",
+    "title": "Cloud Platform Engineer",
+    "company": "Princeton Digital Group",
+    "location": "batam",
+    "roleId": "cloud-engineer"
+  },
+  {
+    "id": "j7",
+    "title": "Network Operations Technician",
+    "company": "Princeton Digital Group",
+    "location": "batam",
+    "roleId": "network-ops"
+  },
+  {
+    "id": "j8",
+    "title": "AI Infrastructure Engineer",
+    "company": "BW Digital",
+    "location": "batam",
+    "roleId": "ai-infra"
+  },
+  {
+    "id": "j9",
+    "title": "Cabling and Facility Technician",
+    "company": "Equator Gate System",
+    "location": "batam",
+    "roleId": "facility-tech"
+  },
+  {
+    "id": "j10",
+    "title": "Network Operations Engineer",
+    "company": "ST Telemedia GDC",
+    "location": "singapore",
+    "roleId": "network-ops"
+  },
+  {
+    "id": "j11",
+    "title": "Cloud Engineer",
+    "company": "Equinix",
+    "location": "singapore",
+    "roleId": "cloud-engineer"
+  },
+  {
+    "id": "j12",
+    "title": "Cybersecurity Analyst",
+    "company": "Equinix",
+    "location": "singapore",
+    "roleId": "security-analyst"
+  },
+  {
+    "id": "j13",
+    "title": "AI Platform Engineer",
+    "company": "Digital Realty",
+    "location": "singapore",
+    "roleId": "ai-infra"
+  },
+  {
+    "id": "j14",
+    "title": "Critical Facility Engineer",
+    "company": "Keppel Data Centres",
+    "location": "singapore",
+    "roleId": "facility-tech"
+  }
+]

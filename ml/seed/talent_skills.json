@@ -1,0 +1,1717 @@
+[
+  {
+    "talentId": "t1",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t1",
+    "skillId": "routing-switching",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t1",
+    "skillId": "tcp-ip",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t1",
+    "skillId": "dns-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t1",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t2",
+    "skillId": "vulnerability-management",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t2",
+    "skillId": "incident-response",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t2",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t3",
+    "skillId": "power-cooling-systems",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t3",
+    "skillId": "data-center-operations",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t3",
+    "skillId": "capacity-planning",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t3",
+    "skillId": "environmental-monitoring",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t3",
+    "skillId": "cabling-infrastructure",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t3",
+    "skillId": "hvac-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t3",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t4",
+    "skillId": "kubernetes",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t4",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t4",
+    "skillId": "data-pipelines",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t4",
+    "skillId": "gpu-infrastructure",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t5",
+    "skillId": "tcp-ip",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t5",
+    "skillId": "load-balancing",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t5",
+    "skillId": "network-monitoring",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t5",
+    "skillId": "cloud-networking",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t5",
+    "skillId": "kubernetes",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t5",
+    "skillId": "dns-management",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t5",
+    "skillId": "incident-response",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t5",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t6",
+    "skillId": "ci-cd",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t6",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t6",
+    "skillId": "iac",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t6",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t6",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t6",
+    "skillId": "containerization",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t6",
+    "skillId": "cloud-networking",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t6",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t7",
+    "skillId": "tcp-ip",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t7",
+    "skillId": "security-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t7",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t7",
+    "skillId": "access-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t7",
+    "skillId": "mlops",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t7",
+    "skillId": "incident-response",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t7",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t8",
+    "skillId": "power-cooling-systems",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t8",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t8",
+    "skillId": "capacity-planning",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t8",
+    "skillId": "environmental-monitoring",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t9",
+    "skillId": "ml-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t9",
+    "skillId": "python-programming",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t9",
+    "skillId": "data-pipelines",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t9",
+    "skillId": "gpu-infrastructure",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t10",
+    "skillId": "tcp-ip",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t10",
+    "skillId": "load-balancing",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t10",
+    "skillId": "network-monitoring",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t10",
+    "skillId": "dns-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t10",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t11",
+    "skillId": "ci-cd",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t11",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t11",
+    "skillId": "iac",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t11",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t11",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t11",
+    "skillId": "containerization",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t11",
+    "skillId": "cloud-networking",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t11",
+    "skillId": "kubernetes",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t12",
+    "skillId": "tcp-ip",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t12",
+    "skillId": "vulnerability-management",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t12",
+    "skillId": "access-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t12",
+    "skillId": "network-security",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t12",
+    "skillId": "incident-response",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t13",
+    "skillId": "cabling-infrastructure",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t13",
+    "skillId": "power-cooling-systems",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t13",
+    "skillId": "capacity-planning",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t14",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t14",
+    "skillId": "ml-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t14",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t14",
+    "skillId": "gpu-infrastructure",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t15",
+    "skillId": "tcp-ip",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t15",
+    "skillId": "routing-switching",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t15",
+    "skillId": "security-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t15",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t15",
+    "skillId": "cloud-networking",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t15",
+    "skillId": "dns-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t15",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t16",
+    "skillId": "routing-switching",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t16",
+    "skillId": "ci-cd",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t16",
+    "skillId": "containerization",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t16",
+    "skillId": "cloud-networking",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t16",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t17",
+    "skillId": "security-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t17",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t17",
+    "skillId": "vulnerability-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t17",
+    "skillId": "access-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t17",
+    "skillId": "network-monitoring",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t17",
+    "skillId": "incident-response",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t17",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t18",
+    "skillId": "cabling-infrastructure",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t18",
+    "skillId": "power-cooling-systems",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t18",
+    "skillId": "dns-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t18",
+    "skillId": "hvac-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t19",
+    "skillId": "kubernetes",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t19",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t19",
+    "skillId": "data-pipelines",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t20",
+    "skillId": "routing-switching",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t20",
+    "skillId": "ci-cd",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t20",
+    "skillId": "security-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t20",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t20",
+    "skillId": "cloud-networking",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t20",
+    "skillId": "dns-management",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t20",
+    "skillId": "incident-response",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t20",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t21",
+    "skillId": "routing-switching",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t21",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t21",
+    "skillId": "ci-cd",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t21",
+    "skillId": "iac",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t21",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t21",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t21",
+    "skillId": "containerization",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t21",
+    "skillId": "kubernetes",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t21",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t22",
+    "skillId": "tcp-ip",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t22",
+    "skillId": "security-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t22",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t22",
+    "skillId": "vulnerability-management",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t22",
+    "skillId": "access-management",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t22",
+    "skillId": "incident-response",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t22",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t23",
+    "skillId": "cabling-infrastructure",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t23",
+    "skillId": "data-center-operations",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t23",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t23",
+    "skillId": "environmental-monitoring",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t24",
+    "skillId": "ml-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t24",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t24",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t24",
+    "skillId": "gpu-infrastructure",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t24",
+    "skillId": "data-pipelines",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t24",
+    "skillId": "mlops",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t24",
+    "skillId": "kubernetes",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t25",
+    "skillId": "network-monitoring",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t25",
+    "skillId": "routing-switching",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t25",
+    "skillId": "dns-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t25",
+    "skillId": "load-balancing",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t26",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t26",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t26",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t26",
+    "skillId": "cloud-networking",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t26",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t27",
+    "skillId": "tcp-ip",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t27",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t27",
+    "skillId": "vulnerability-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t27",
+    "skillId": "access-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t27",
+    "skillId": "network-security",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t27",
+    "skillId": "incident-response",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t27",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t28",
+    "skillId": "cabling-infrastructure",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t28",
+    "skillId": "gpu-infrastructure",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t28",
+    "skillId": "capacity-planning",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t28",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t29",
+    "skillId": "ml-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t29",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t29",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t29",
+    "skillId": "data-pipelines",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t30",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t30",
+    "skillId": "cloud-networking",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t30",
+    "skillId": "mlops",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t30",
+    "skillId": "dns-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t30",
+    "skillId": "incident-response",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t30",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t31",
+    "skillId": "ci-cd",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t31",
+    "skillId": "iac",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t31",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t31",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t31",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t31",
+    "skillId": "containerization",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t31",
+    "skillId": "cloud-networking",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t31",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t32",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t32",
+    "skillId": "vulnerability-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t32",
+    "skillId": "access-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t32",
+    "skillId": "network-security",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t32",
+    "skillId": "incident-response",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t32",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t33",
+    "skillId": "physical-security",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t33",
+    "skillId": "hvac-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t33",
+    "skillId": "environmental-monitoring",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t34",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t34",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t34",
+    "skillId": "data-pipelines",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t34",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t34",
+    "skillId": "mlops",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t34",
+    "skillId": "kubernetes",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t35",
+    "skillId": "routing-switching",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t35",
+    "skillId": "load-balancing",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t35",
+    "skillId": "security-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t35",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t35",
+    "skillId": "network-monitoring",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t35",
+    "skillId": "dns-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t35",
+    "skillId": "incident-response",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t35",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t36",
+    "skillId": "ci-cd",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t36",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t36",
+    "skillId": "iac",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t36",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t36",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t36",
+    "skillId": "cloud-networking",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t36",
+    "skillId": "kubernetes",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t36",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t37",
+    "skillId": "security-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t37",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t37",
+    "skillId": "vulnerability-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t37",
+    "skillId": "access-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t37",
+    "skillId": "network-security",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t37",
+    "skillId": "cloud-networking",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t37",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t38",
+    "skillId": "physical-security",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t38",
+    "skillId": "power-cooling-systems",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t38",
+    "skillId": "capacity-planning",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t38",
+    "skillId": "environmental-monitoring",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t38",
+    "skillId": "cabling-infrastructure",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t38",
+    "skillId": "hvac-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t39",
+    "skillId": "ml-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t39",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t39",
+    "skillId": "python-programming",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t39",
+    "skillId": "data-pipelines",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t39",
+    "skillId": "gpu-infrastructure",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t39",
+    "skillId": "mlops",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t39",
+    "skillId": "kubernetes",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t40",
+    "skillId": "ci-cd",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t40",
+    "skillId": "load-balancing",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t40",
+    "skillId": "security-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t40",
+    "skillId": "network-monitoring",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t40",
+    "skillId": "incident-response",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t40",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t41",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t41",
+    "skillId": "python-programming",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t41",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t41",
+    "skillId": "containerization",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t41",
+    "skillId": "cloud-networking",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t41",
+    "skillId": "kubernetes",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t42",
+    "skillId": "tcp-ip",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t42",
+    "skillId": "security-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t42",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t42",
+    "skillId": "vulnerability-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t42",
+    "skillId": "network-security",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t42",
+    "skillId": "incident-response",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t42",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t43",
+    "skillId": "environmental-monitoring",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t43",
+    "skillId": "capacity-planning",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t43",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t44",
+    "skillId": "ml-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t44",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t44",
+    "skillId": "data-pipelines",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t44",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t44",
+    "skillId": "kubernetes",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t45",
+    "skillId": "load-balancing",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t45",
+    "skillId": "security-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t45",
+    "skillId": "network-monitoring",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t45",
+    "skillId": "cloud-networking",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t45",
+    "skillId": "incident-response",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t46",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t46",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t46",
+    "skillId": "iac",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t46",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t47",
+    "skillId": "vulnerability-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t47",
+    "skillId": "tcp-ip",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t47",
+    "skillId": "access-management",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t48",
+    "skillId": "data-center-operations",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t48",
+    "skillId": "capacity-planning",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t48",
+    "skillId": "cabling-infrastructure",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t48",
+    "skillId": "hvac-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t48",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t49",
+    "skillId": "ml-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t49",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t49",
+    "skillId": "python-programming",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t49",
+    "skillId": "data-pipelines",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t49",
+    "skillId": "gpu-infrastructure",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t49",
+    "skillId": "mlops",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t49",
+    "skillId": "kubernetes",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t50",
+    "skillId": "tcp-ip",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t50",
+    "skillId": "routing-switching",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t50",
+    "skillId": "load-balancing",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t50",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t50",
+    "skillId": "network-monitoring",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t50",
+    "skillId": "dns-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t50",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t51",
+    "skillId": "ci-cd",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t51",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t51",
+    "skillId": "iac",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t51",
+    "skillId": "python-programming",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t51",
+    "skillId": "linux-administration",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t51",
+    "skillId": "containerization",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t51",
+    "skillId": "dns-management",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t51",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t52",
+    "skillId": "security-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t52",
+    "skillId": "vulnerability-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t52",
+    "skillId": "access-management",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t52",
+    "skillId": "network-security",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t52",
+    "skillId": "environmental-monitoring",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t52",
+    "skillId": "incident-response",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t53",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t53",
+    "skillId": "physical-security",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t53",
+    "skillId": "power-cooling-systems",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t53",
+    "skillId": "data-center-operations",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t53",
+    "skillId": "environmental-monitoring",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t53",
+    "skillId": "hvac-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t54",
+    "skillId": "kubernetes",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t54",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t54",
+    "skillId": "data-pipelines",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t55",
+    "skillId": "routing-switching",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t55",
+    "skillId": "load-balancing",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t55",
+    "skillId": "security-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t55",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t55",
+    "skillId": "network-monitoring",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t55",
+    "skillId": "cloud-networking",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t55",
+    "skillId": "dns-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t55",
+    "skillId": "incident-response",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t55",
+    "skillId": "networking-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t56",
+    "skillId": "iac",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t56",
+    "skillId": "python-programming",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t56",
+    "skillId": "linux-administration",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t56",
+    "skillId": "cloud-networking",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t56",
+    "skillId": "kubernetes",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t56",
+    "skillId": "hvac-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t56",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t57",
+    "skillId": "tcp-ip",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t57",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t57",
+    "skillId": "vulnerability-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t57",
+    "skillId": "access-management",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t57",
+    "skillId": "network-security",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t57",
+    "skillId": "networking-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t58",
+    "skillId": "physical-security",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t58",
+    "skillId": "power-cooling-systems",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t58",
+    "skillId": "cabling-infrastructure",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t58",
+    "skillId": "hvac-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t58",
+    "skillId": "networking-fundamentals",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t59",
+    "skillId": "ml-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t59",
+    "skillId": "cloud-fundamentals",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t59",
+    "skillId": "data-pipelines",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t59",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t59",
+    "skillId": "kubernetes",
+    "proficiency": 1
+  },
+  {
+    "talentId": "t60",
+    "skillId": "tcp-ip",
+    "proficiency": 2
+  },
+  {
+    "talentId": "t60",
+    "skillId": "security-fundamentals",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t60",
+    "skillId": "python-programming",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t60",
+    "skillId": "linux-administration",
+    "proficiency": 3
+  },
+  {
+    "talentId": "t60",
+    "skillId": "dns-management",
+    "proficiency": 2
+  }
+]

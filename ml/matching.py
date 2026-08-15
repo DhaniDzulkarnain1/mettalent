@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-seed_path = Path(__file__).parent.parent / "backend" / "db" / "seed"
+seed_path = Path(__file__).parent / "seed"
 
 with open(seed_path / "skills.json") as f:
     skills_data = json.load(f)
