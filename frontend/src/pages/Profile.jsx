@@ -62,7 +62,7 @@ export default function Profile() {
         >
           <div className="bg-surface rounded-2xl p-8 shadow-sm border border-subtle mb-8">
             <div className="flex items-start gap-6">
-              <div className="w-20 h-20 bg-brand rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-20 h-20 bg-brand rounded-2xl flex items-center justify-center flex-shrink-0">
                 <span className="text-on-brand font-bold text-[32px]">
                   {talent?.name.split(' ').map(n => n[0]).join('')}
                 </span>
@@ -157,8 +157,8 @@ export default function Profile() {
 
               <motion.button
                 onClick={handleAnalyze}
-                className="w-full bg-brand hover:bg-brand-hover text-on-brand font-semibold text-[16px] h-[52px] rounded-lg shadow-sm transition-all duration-200"
-                whileHover={{ scale: 1.01 }}
+                className="w-full bg-brand hover:bg-brand-hover text-on-brand font-semibold text-[16px] h-[52px] rounded-xl shadow-sm transition-all"
+                whileHover={{ scale: 1.01, y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
                 Analyze Readiness →

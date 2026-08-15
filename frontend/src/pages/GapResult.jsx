@@ -198,16 +198,16 @@ export default function GapResult() {
           <div className="flex gap-4">
             <motion.button
               onClick={() => navigate('/profile')}
-              className="flex-1 bg-surface hover:bg-subtle text-primary font-semibold text-[16px] h-[52px] rounded-lg border border-default transition-all"
-              whileHover={{ scale: 1.01 }}
+              className="flex-1 bg-surface hover:bg-subtle text-primary font-semibold text-[16px] h-[52px] rounded-xl border border-default transition-all"
+              whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >
               ← Back to Profile
             </motion.button>
             <motion.button
               onClick={() => navigate('/employer')}
-              className="flex-1 bg-brand hover:bg-brand-hover text-on-brand font-semibold text-[16px] h-[52px] rounded-lg shadow-sm transition-all"
-              whileHover={{ scale: 1.01 }}
+              className="flex-1 bg-brand hover:bg-brand-hover text-on-brand font-semibold text-[16px] h-[52px] rounded-xl shadow-sm transition-all"
+              whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >
               View as Employer →

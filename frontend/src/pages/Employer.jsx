@@ -112,7 +112,7 @@ export default function Employer() {
                 >
                   <div className="flex items-start gap-6">
                     <div className="flex items-center gap-4 flex-1">
-                      <div className="w-12 h-12 bg-gradient-to-br from-brand to-green-700 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-gradient-to-br from-brand to-green-700 rounded-xl flex items-center justify-center flex-shrink-0">
                         <span className="text-on-brand font-bold text-[20px]">
                           #{index + 1}
                         </span>
