@@ -72,7 +72,7 @@ export default function StatsCarousel() {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`h-2 rounded-full transition-all duration-300 ${
+            className={`cursor-pointer h-2 rounded-full transition-all duration-300 ${
               index === current ? 'bg-white w-8' : 'bg-white/30 w-2'
             }`}
           />

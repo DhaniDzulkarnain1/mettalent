@@ -41,7 +41,7 @@ export default function Landing() {
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
               <motion.button
                 onClick={() => navigate('/profile')}
-                className="bg-green-700 hover:bg-green-800 text-white font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl shadow-sm transition-all w-full sm:w-auto"
+                className="cursor-pointer bg-green-700 hover:bg-green-800 hover:shadow-lg text-white font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl shadow-sm transition-all w-full sm:w-auto"
                 whileHover={{ scale: 1.01, boxShadow: '0 4px 12px rgba(28, 77, 45, 0.2)', y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
@@ -49,7 +49,7 @@ export default function Landing() {
               </motion.button>
               <motion.button
                 onClick={() => navigate('/employer')}
-                className="bg-white hover:bg-gray-50 text-gray-900 font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl border border-gray-300 transition-all w-full sm:w-auto"
+                className="cursor-pointer bg-white hover:bg-gray-50 hover:shadow-md text-gray-900 font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl border border-gray-300 transition-all w-full sm:w-auto"
                 whileHover={{ scale: 1.01, y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
@@ -244,7 +244,7 @@ export default function Landing() {
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center">
             <motion.button
               onClick={() => navigate('/profile')}
-              className="bg-white text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl font-semibold transition-all w-full sm:w-auto"
+              className="cursor-pointer bg-white hover:bg-gray-50 hover:shadow-lg text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl font-semibold transition-all w-full sm:w-auto"
               style={{ color: '#1C4D2D' }}
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
@@ -253,7 +253,7 @@ export default function Landing() {
             </motion.button>
             <motion.button
               onClick={() => navigate('/employer')}
-              className="bg-transparent text-white font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl transition-all w-full sm:w-auto"
+              className="cursor-pointer bg-transparent hover:bg-white/10 text-white font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl transition-all w-full sm:w-auto"
               style={{ borderColor: '#5E9C72', borderWidth: '1px' }}
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
@@ -279,21 +279,21 @@ export default function Landing() {
               </p>
               {/* Social Media Links */}
               <div className="flex gap-3">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                     <rect x="2" y="9" width="4" height="12"></rect>
                     <circle cx="4" cy="4" r="2"></circle>
                   </svg>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
                   </svg>
@@ -306,22 +306,22 @@ export default function Landing() {
               <h4 className="font-semibold text-[14px] text-primary mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <button onClick={() => navigate('/')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     Home
                   </button>
                 </li>
                 <li>
-                  <a href="#features" className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <a href="#features" className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     How it Works
                   </a>
                 </li>
                 <li>
-                  <button onClick={() => navigate('/profile')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/profile')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     For Talent
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate('/employer')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/employer')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     For Employers
                   </button>
                 </li>
@@ -333,22 +333,22 @@ export default function Landing() {
               <h4 className="font-semibold text-[14px] text-primary mb-4">Resources</h4>
               <ul className="space-y-2">
                 <li>
-                  <button onClick={() => navigate('/about')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/about')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     About Us
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate('/careers')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/careers')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     Data Center Careers
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate('/skills')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/skills')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     Skills Database
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate('/contact')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/contact')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     Contact
                   </button>
                 </li>
@@ -360,17 +360,17 @@ export default function Landing() {
               <h4 className="font-semibold text-[14px] text-primary mb-4">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <button onClick={() => navigate('/privacy')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/privacy')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     Privacy Policy
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate('/terms')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/terms')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     Terms of Service
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => navigate('/cookies')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/cookies')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     Cookie Policy
                   </button>
                 </li>

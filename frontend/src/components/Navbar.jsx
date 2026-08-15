@@ -56,25 +56,25 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-7">
             <button
               onClick={() => navigate('/profile')}
-              className="text-[14px] font-medium text-secondary hover:text-primary transition-colors"
+              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors"
             >
               For Talent
             </button>
             <button
               onClick={() => navigate('/employer')}
-              className="text-[14px] font-medium text-secondary hover:text-primary transition-colors"
+              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors"
             >
               For Employers
             </button>
             <button
               onClick={() => navigate('/login')}
-              className="text-[14px] font-medium text-secondary hover:text-primary transition-colors"
+              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors"
             >
               Login
             </button>
             <motion.button
               onClick={() => navigate('/register')}
-              className="font-medium text-[14px] h-10 px-[18px] rounded-xl transition-all"
+              className="cursor-pointer font-medium text-[14px] h-10 px-[18px] rounded-xl transition-all hover:bg-green-800 hover:shadow-md"
               style={{ backgroundColor: '#1C4D2D', color: '#FFFFFF' }}
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.99 }}
@@ -85,7 +85,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="cursor-pointer md:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -130,7 +130,7 @@ export default function Navbar() {
                   navigate('/profile');
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
+                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
               >
                 For Talent
               </button>
@@ -139,7 +139,7 @@ export default function Navbar() {
                   navigate('/employer');
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
+                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
               >
                 For Employers
               </button>
@@ -148,7 +148,7 @@ export default function Navbar() {
                   navigate('/login');
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
+                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
               >
                 Login
               </button>
@@ -157,7 +157,7 @@ export default function Navbar() {
                   navigate('/register');
                   setIsMobileMenuOpen(false);
                 }}
-                className="font-medium text-[14px] h-10 px-[18px] rounded-xl transition-all text-center"
+                className="cursor-pointer font-medium text-[14px] h-10 px-[18px] rounded-xl transition-all text-center hover:bg-green-800 hover:shadow-md"
                 style={{ backgroundColor: '#1C4D2D', color: '#FFFFFF' }}
               >
                 Sign Up

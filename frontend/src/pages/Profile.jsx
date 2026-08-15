@@ -100,32 +100,46 @@ export default function Profile() {
                     {category}
                   </div>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {skills.map((skill, index) => (
-                      <motion.div
-                        key={skill.skillId}
-                        className="bg-canvas rounded-lg p-4 border border-subtle"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.3, delay: catIndex * 0.1 + index * 0.05 }}
-                      >
-                        <div className="text-[14px] font-medium text-primary mb-2">
-                          {skill.name}
-                        </div>
-                        <div className="flex items-center gap-1">
-                          {[1, 2, 3].map((level) => (
-                            <div
-                              key={level}
-                              className={`h-1.5 flex-1 rounded-full ${
-                                level <= skill.proficiency ? 'bg-brand' : 'bg-subtle'
-                              }`}
-                            />
-                          ))}
-                          <span className="text-[12px] text-muted ml-2">
-                            {skill.proficiency}/3
-                          </span>
-                        </div>
-                      </motion.div>
-                    ))}
+                    {skills.map((skill, index) => {
+                      const getProficiencyColor = (proficiency) => {
+                        if (proficiency === 3) return 'bg-green-600';
+                        if (proficiency === 2) return 'bg-yellow-400';
+                        return 'bg-red-500';
+                      };
+
+                      const getProficiencyBgColor = (proficiency) => {
+                        if (proficiency === 3) return 'bg-green-50 border-green-200';
+                        if (proficiency === 2) return 'bg-yellow-50 border-yellow-200';
+                        return 'bg-red-50 border-red-200';
+                      };
+
+                      return (
+                        <motion.div
+                          key={skill.skillId}
+                          className={`rounded-lg p-4 border ${getProficiencyBgColor(skill.proficiency)}`}
+                          initial={{ opacity: 0, scale: 0.9 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.3, delay: catIndex * 0.1 + index * 0.05 }}
+                        >
+                          <div className="text-[14px] font-medium text-primary mb-2">
+                            {skill.name}
+                          </div>
+                          <div className="flex items-center gap-1">
+                            {[1, 2, 3].map((level) => (
+                              <div
+                                key={level}
+                                className={`h-1.5 flex-1 rounded-full ${
+                                  level <= skill.proficiency ? getProficiencyColor(skill.proficiency) : 'bg-gray-200'
+                                }`}
+                              />
+                            ))}
+                            <span className="text-[12px] text-muted ml-2">
+                              {skill.proficiency}/3
+                            </span>
+                          </div>
+                        </motion.div>
+                      );
+                    })}
                   </div>
                 </div>
               ))}
@@ -145,7 +159,7 @@ export default function Profile() {
                 <select
                   value={selectedRole}
                   onChange={(e) => setSelectedRole(e.target.value)}
-                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-all"
+                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent hover:border-gray-400 transition-all cursor-pointer"
                 >
                   {roles.map((role) => (
                     <option key={role.id} value={role.id}>
@@ -157,7 +171,7 @@ export default function Profile() {
 
               <motion.button
                 onClick={handleAnalyze}
-                className="w-full bg-brand hover:bg-brand-hover text-on-brand font-semibold text-[16px] h-[52px] rounded-xl shadow-sm transition-all"
+                className="cursor-pointer w-full bg-brand hover:bg-green-800 text-on-brand font-semibold text-[16px] h-[52px] rounded-xl shadow-sm hover:shadow-lg transition-all"
                 whileHover={{ scale: 1.01, y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >

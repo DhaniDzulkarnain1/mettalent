@@ -61,21 +61,21 @@ export default function GapResult() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="bg-gradient-to-br from-brand to-green-700 rounded-2xl p-8 shadow-lg mb-8 text-on-brand">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 mb-8">
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h1 className="text-[28px] font-bold mb-2">Readiness Analysis</h1>
-                <p className="text-green-100 text-[14px]">{result.explanation}</p>
+                <h1 className="text-[28px] font-bold mb-2 text-primary">Readiness Analysis</h1>
+                <p className="text-secondary text-[14px]">{result.explanation}</p>
               </div>
               <div className="text-right">
-                <div className="text-[56px] font-bold leading-none">{readinessPercent}%</div>
-                <div className="text-[13px] text-green-100 mt-1">Current Readiness</div>
+                <div className="text-[56px] font-bold leading-none text-brand">{readinessPercent}%</div>
+                <div className="text-[13px] text-muted mt-1">Current Readiness</div>
               </div>
             </div>
 
-            <div className="bg-green-800/30 rounded-full h-3 overflow-hidden">
+            <div className="bg-gray-200 rounded-full h-3 overflow-hidden">
               <motion.div
-                className="bg-on-brand h-full rounded-full"
+                className="bg-brand h-full rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: `${readinessPercent}%` }}
                 transition={{ duration: 1, delay: 0.3 }}
@@ -198,7 +198,7 @@ export default function GapResult() {
           <div className="flex gap-4">
             <motion.button
               onClick={() => navigate('/profile')}
-              className="flex-1 bg-surface hover:bg-subtle text-primary font-semibold text-[16px] h-[52px] rounded-xl border border-default transition-all"
+              className="flex-1 bg-surface hover:bg-subtle hover:shadow-md text-primary font-semibold text-[16px] h-[52px] rounded-xl border border-default transition-all"
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >
@@ -206,7 +206,7 @@ export default function GapResult() {
             </motion.button>
             <motion.button
               onClick={() => navigate('/employer')}
-              className="flex-1 bg-brand hover:bg-brand-hover text-on-brand font-semibold text-[16px] h-[52px] rounded-xl shadow-sm transition-all"
+              className="flex-1 bg-brand hover:bg-green-800 text-on-brand font-semibold text-[16px] h-[52px] rounded-xl shadow-sm hover:shadow-lg transition-all"
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >

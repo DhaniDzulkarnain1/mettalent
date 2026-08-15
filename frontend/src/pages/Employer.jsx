@@ -71,7 +71,7 @@ export default function Employer() {
                 <select
                   value={selectedRole}
                   onChange={(e) => setSelectedRole(e.target.value)}
-                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-all"
+                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent hover:border-gray-400 transition-all cursor-pointer"
                 >
                   {roles.map((role) => (
                     <option key={role.id} value={role.id}>
@@ -88,7 +88,7 @@ export default function Employer() {
                 <select
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent transition-all"
+                  className="w-full h-[48px] px-4 bg-canvas border border-default rounded-lg text-primary focus:outline-none focus:ring-2 focus:ring-brand focus:border-transparent hover:border-gray-400 transition-all cursor-pointer"
                 >
                   <option value="batam">Batam</option>
                   <option value="singapore">Singapore</option>
@@ -104,7 +104,7 @@ export default function Employer() {
               {matches.slice(0, 20).map((match, index) => (
                 <motion.div
                   key={match.talentId}
-                  className="bg-surface rounded-xl p-6 shadow-sm border border-subtle hover:border-brand hover:shadow-md transition-all"
+                  className="bg-surface rounded-xl p-6 shadow-sm border border-subtle hover:border-brand hover:shadow-lg transition-all cursor-pointer"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}

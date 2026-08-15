@@ -101,10 +101,10 @@ export default function Skills() {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-5 py-2.5 rounded-xl font-medium text-[14px] transition-all ${
+                className={`cursor-pointer px-5 py-2.5 rounded-xl font-medium text-[14px] transition-all ${
                   selectedCategory === category
-                    ? 'bg-brand text-white'
-                    : 'bg-surface text-secondary border border-subtle hover:bg-subtle'
+                    ? 'bg-brand text-white hover:bg-green-800 shadow-sm'
+                    : 'bg-surface text-secondary border border-subtle hover:bg-subtle hover:shadow-sm'
                 }`}
               >
                 {category}
@@ -160,7 +160,7 @@ export default function Skills() {
           <div className="flex gap-4 justify-center">
             <motion.button
               onClick={() => navigate('/profile')}
-              className="font-semibold text-[16px] h-[48px] px-8 rounded-xl transition-all"
+              className="cursor-pointer font-semibold text-[16px] h-[48px] px-8 rounded-xl transition-all hover:bg-green-800 hover:shadow-lg"
               style={{ backgroundColor: '#1C4D2D', color: '#FFFFFF' }}
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
@@ -169,7 +169,7 @@ export default function Skills() {
             </motion.button>
             <motion.button
               onClick={() => navigate('/employer')}
-              className="bg-white hover:bg-gray-50 text-gray-900 font-semibold text-[16px] h-[48px] px-8 rounded-xl border border-gray-300 transition-all"
+              className="cursor-pointer bg-white hover:bg-gray-50 hover:shadow-md text-gray-900 font-semibold text-[16px] h-[48px] px-8 rounded-xl border border-gray-300 transition-all"
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >

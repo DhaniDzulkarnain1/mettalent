@@ -117,7 +117,7 @@ export default function Contact() {
 
                 <motion.button
                   type="submit"
-                  className="w-full bg-brand hover:bg-brand-hover text-white font-semibold text-[16px] h-[52px] rounded-xl transition-all"
+                  className="cursor-pointer w-full bg-brand hover:bg-green-800 hover:shadow-lg text-white font-semibold text-[16px] h-[52px] rounded-xl transition-all"
                   whileHover={{ scale: 1.01 }}
                   whileTap={{ scale: 0.99 }}
                 >
@@ -193,21 +193,21 @@ export default function Contact() {
                 Stay connected and get the latest updates about data center careers and talent opportunities.
               </p>
               <div className="flex gap-3">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-brand-subtle hover:bg-brand flex items-center justify-center transition-all group">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer w-10 h-10 rounded-full bg-brand-subtle hover:bg-brand flex items-center justify-center transition-all group">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" className="group-hover:stroke-white">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-brand-subtle hover:bg-brand flex items-center justify-center transition-all group">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer w-10 h-10 rounded-full bg-brand-subtle hover:bg-brand flex items-center justify-center transition-all group">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" className="group-hover:stroke-white">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                     <rect x="2" y="9" width="4" height="12"></rect>
                     <circle cx="4" cy="4" r="2"></circle>
                   </svg>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-brand-subtle hover:bg-brand flex items-center justify-center transition-all group">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer w-10 h-10 rounded-full bg-brand-subtle hover:bg-brand flex items-center justify-center transition-all group">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" className="group-hover:stroke-white">
                     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
                   </svg>
