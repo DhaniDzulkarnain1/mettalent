@@ -1,10 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* Semantic Color Tokens - Light Mode */
+  --color-bg-app: #F8FAF9;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-subtle: #F0F3F1;
+  --color-bg-strong: #18201B;
+  --color-bg-brand: #1C4D2D;
+  --color-bg-brand-hover: #173F26;
+  --color-bg-brand-subtle: #DCECDF;
+  --color-bg-disabled: #E1E7E3;
+
+  --color-text-primary: #18201B;
+  --color-text-secondary: #536258;
+  --color-text-muted: #6F8176;
+  --color-text-disabled: #9AA9A0;
+  --color-text-brand: #173F26;
+  --color-text-on-brand: #FFFFFF;
+
+  --color-border-default: #C9D2CC;
+  --color-border-subtle: #E1E7E3;
+  --color-border-strong: #6F8176;
+  --color-border-brand: #1C4D2D;
+  --color-border-focus: #347B4E;
+
+  --font-sans: 'Poppins', system-ui, sans-serif;
+}
 
 body {
   margin: 0;
-  font-family: 'Poppins', system-ui, sans-serif;
-  background-color: var(--color-bg-canvas);
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-app);
   color: var(--color-text-primary);
 }

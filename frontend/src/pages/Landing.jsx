@@ -2,6 +2,9 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import StatsCarousel from '../components/StatsCarousel';
+import logo from '../assets/Mettalent.svg';
+import textLogo from '../assets/blackk.svg';
+import heroIllustration from '../assets/hero-illustration.png';
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -19,18 +22,18 @@ export default function Landing() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-block px-4 py-2 bg-brand-subtle text-brand text-[13px] font-medium rounded-full mb-6">
+            <div className="inline-block px-4 py-2 bg-green-100 text-green-800 text-[13px] font-medium rounded-full mb-6">
               Batam–Singapore Data Center Corridor
             </div>
 
-            <h1 className="text-[48px] leading-[56px] font-bold text-primary mb-6 tracking-tight">
+            <h1 className="text-[48px] leading-[56px] font-bold text-gray-900 mb-6 tracking-tight">
               Connecting{' '}
-              <span className="text-brand">Talent</span>
+              <span className="text-green-700">Talent</span>
               <br />
               to Opportunity
             </h1>
 
-            <p className="text-[18px] leading-[28px] text-secondary mb-8 max-w-[480px]">
+            <p className="text-[18px] leading-[28px] text-gray-600 mb-8 max-w-[480px]">
               Batam has IDR 120 trillion in data center investment, yet faces 64% youth unemployment.
               We bridge the gap between education, skills, and data center careers.
             </p>
@@ -38,7 +41,7 @@ export default function Landing() {
             <div className="flex flex-wrap gap-4 mb-12">
               <motion.button
                 onClick={() => navigate('/profile')}
-                className="bg-brand hover:bg-brand-hover text-on-brand font-semibold text-[16px] h-[52px] px-8 rounded-xl shadow-sm transition-all"
+                className="bg-green-700 hover:bg-green-800 text-white font-semibold text-[16px] h-[52px] px-8 rounded-xl shadow-sm transition-all"
                 whileHover={{ scale: 1.01, boxShadow: '0 4px 12px rgba(28, 77, 45, 0.2)', y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
@@ -46,7 +49,7 @@ export default function Landing() {
               </motion.button>
               <motion.button
                 onClick={() => navigate('/employer')}
-                className="bg-surface hover:bg-subtle text-primary font-semibold text-[16px] h-[52px] px-8 rounded-xl border border-default transition-all"
+                className="bg-white hover:bg-gray-50 text-gray-900 font-semibold text-[16px] h-[52px] px-8 rounded-xl border border-gray-300 transition-all"
                 whileHover={{ scale: 1.01, y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
@@ -56,40 +59,62 @@ export default function Landing() {
 
             <div className="grid grid-cols-3 gap-6 max-w-[420px]">
               <div className="text-center">
-                <div className="text-[28px] font-bold text-brand">30+</div>
-                <div className="text-[13px] text-muted">Skills Tracked</div>
+                <div className="text-[28px] font-bold text-green-700">30+</div>
+                <div className="text-[13px] text-gray-500">Skills Tracked</div>
               </div>
               <div className="text-center">
-                <div className="text-[28px] font-bold text-brand">60+</div>
-                <div className="text-[13px] text-muted">Talent Profiles</div>
+                <div className="text-[28px] font-bold text-green-700">60+</div>
+                <div className="text-[13px] text-gray-500">Talent Profiles</div>
               </div>
               <div className="text-center">
-                <div className="text-[28px] font-bold text-brand">5</div>
-                <div className="text-[13px] text-muted">Data Center Roles</div>
+                <div className="text-[28px] font-bold text-green-700">5</div>
+                <div className="text-[13px] text-gray-500">Data Center Roles</div>
               </div>
             </div>
           </motion.div>
 
-          {/* Right Column - Challenge Card */}
+          {/* Right Column - Hero Illustration */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
+            className="relative"
           >
-            <div className="bg-surface rounded-2xl p-10 shadow-xl border border-subtle">
-              <h3 className="text-[20px] font-semibold text-primary mb-8 text-center">
-                The Challenge
-              </h3>
+            <img
+              src={heroIllustration}
+              alt="Journey to Data Center Career"
+              className="w-full h-auto rounded-2xl shadow-xl"
+            />
+          </motion.div>
+        </div>
+      </div>
 
+      {/* The Challenge Section */}
+      <div className="bg-canvas">
+        <div className="max-w-[1200px] mx-auto px-6 py-20">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-[900px] mx-auto"
+          >
+            <div className="text-center mb-12">
+              <h2 className="text-[36px] leading-[44px] font-bold text-primary mb-4">
+                The Challenge We Solve
+              </h2>
+              <p className="text-[18px] leading-[28px] text-secondary max-w-[600px] mx-auto">
+                A broken talent supply chain between campuses, certification, and industry. Here's what the data shows:
+              </p>
+            </div>
+
+            <div className="bg-surface rounded-2xl p-12 shadow-xl border border-subtle">
               <StatsCarousel />
 
-              <div className="mt-10 pt-8 border-t border-subtle">
-                <div className="text-center">
-                  <p className="text-[15px] leading-[24px] text-secondary">
-                    A broken talent supply chain between campuses, certification, and industry.
-                    <span className="block mt-2 font-medium text-primary">We fix that.</span>
-                  </p>
-                </div>
+              <div className="mt-10 pt-8 border-t border-subtle text-center">
+                <p className="text-[17px] leading-[26px] text-secondary max-w-[500px] mx-auto">
+                  A broken talent supply chain between campuses, certification, and industry.
+                  <span className="block mt-3 text-[18px] font-semibold text-primary">We fix that.</span>
+                </p>
               </div>
             </div>
           </motion.div>
@@ -97,7 +122,7 @@ export default function Landing() {
       </div>
 
       {/* Features Section */}
-      <div id="features" className="bg-surface border-t border-b border-subtle">
+      <div id="features" className="bg-surface">
         <div className="max-w-[1200px] mx-auto px-6 py-20">
           <div className="text-center max-w-[640px] mx-auto mb-12">
             <div className="text-[12px] font-medium tracking-wider uppercase text-brand mb-3">
@@ -189,21 +214,23 @@ export default function Landing() {
       {/* CTA Section */}
       <div className="max-w-[1200px] mx-auto px-6 py-20">
         <motion.div
-          className="bg-brand rounded-2xl p-14 text-center shadow-xl"
+          className="rounded-2xl p-14 text-center shadow-xl"
+          style={{ backgroundColor: '#1C4D2D' }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <h2 className="text-[32px] leading-[40px] font-semibold text-on-brand mb-3">
+          <h2 className="text-[32px] leading-[40px] font-semibold text-white mb-3">
             Close the gap. Fill the roles.
           </h2>
-          <p className="text-[18px] leading-[28px] text-green-100 mb-8 max-w-[560px] mx-auto">
+          <p className="text-[18px] leading-[28px] mb-8 max-w-[560px] mx-auto" style={{ color: '#B9D8C0' }}>
             Whether you're building a career or a data center team, mettalent connects the right talent to the right opportunity.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <motion.button
               onClick={() => navigate('/profile')}
-              className="bg-surface hover:bg-green-50 text-brand font-semibold text-[16px] h-[52px] px-8 rounded-xl transition-all"
+              className="bg-white text-[16px] h-[52px] px-8 rounded-xl font-semibold transition-all"
+              style={{ color: '#1C4D2D' }}
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >
@@ -211,7 +238,8 @@ export default function Landing() {
             </motion.button>
             <motion.button
               onClick={() => navigate('/employer')}
-              className="bg-transparent hover:bg-green-900 text-on-brand font-semibold text-[16px] h-[52px] px-8 rounded-xl border border-green-700 transition-all"
+              className="bg-transparent text-white font-semibold text-[16px] h-[52px] px-8 rounded-xl transition-all"
+              style={{ borderColor: '#5E9C72', borderWidth: '1px' }}
               whileHover={{ scale: 1.01, y: -1 }}
               whileTap={{ scale: 0.99 }}
             >
@@ -222,19 +250,128 @@ export default function Landing() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-subtle">
-        <div className="max-w-[1200px] mx-auto px-6 py-8 flex flex-wrap gap-4 items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-brand rounded-lg flex items-center justify-center">
-              <span className="text-on-brand font-bold text-[14px]">MT</span>
+      <footer className="bg-surface">
+        <div className="max-w-[1200px] mx-auto px-6 py-12">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            {/* Company Info */}
+            <div className="md:col-span-1">
+              <div className="flex items-center gap-2 mb-4">
+                <img src={logo} alt="Mettalent Logo" className="h-8" />
+                <img src={textLogo} alt="Mettalent" className="h-8" />
+              </div>
+              <p className="text-[13px] leading-[20px] text-secondary mb-4">
+                Connecting talent to opportunity in the Batam-Singapore Data Center Corridor.
+              </p>
+              {/* Social Media Links */}
+              <div className="flex gap-3">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-subtle hover:bg-brand-subtle flex items-center justify-center transition-colors">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1C4D2D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <span className="text-[14px] text-secondary">
-              mettalent — Batam–Singapore Talent Supply Chain
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="font-semibold text-[14px] text-primary mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <button onClick={() => navigate('/')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <a href="#features" className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    How it Works
+                  </a>
+                </li>
+                <li>
+                  <button onClick={() => navigate('/profile')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    For Talent
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => navigate('/employer')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    For Employers
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            {/* Resources */}
+            <div>
+              <h4 className="font-semibold text-[14px] text-primary mb-4">Resources</h4>
+              <ul className="space-y-2">
+                <li>
+                  <button onClick={() => navigate('/about')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    About Us
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => navigate('/careers')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    Data Center Careers
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => navigate('/skills')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    Skills Database
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => navigate('/contact')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    Contact
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h4 className="font-semibold text-[14px] text-primary mb-4">Legal</h4>
+              <ul className="space-y-2">
+                <li>
+                  <button onClick={() => navigate('/privacy')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    Privacy Policy
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => navigate('/terms')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    Terms of Service
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => navigate('/cookies')} className="text-[13px] text-secondary hover:text-brand transition-colors">
+                    Cookie Policy
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="pt-6 border-t border-subtle flex flex-wrap gap-4 items-center justify-between">
+            <span className="text-[13px] text-muted">
+              © 2026 Mettalent. All rights reserved.
+            </span>
+            <span className="text-[13px] text-muted">
+              Batam Singapore Hackathon 2026 · Team Rollerblade
             </span>
           </div>
-          <span className="text-[13px] text-muted">
-            Batam Singapore Hackathon 2026 · Team Rollerblade
-          </span>
         </div>
       </footer>
     </div>

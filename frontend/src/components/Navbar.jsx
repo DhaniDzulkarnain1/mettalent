@@ -1,67 +1,87 @@
+import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import logo from '../assets/Mettalent.svg';
+import textLogo from '../assets/blackk.svg';
 
 export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const isActive = (path) => location.pathname === path;
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Show navbar when scrolling up or at top
+      if (currentScrollY < lastScrollY || currentScrollY < 10) {
+        setIsVisible(true);
+      }
+      // Hide navbar when scrolling down
+      else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <nav className="bg-surface/95 backdrop-blur-md border-b border-subtle sticky top-0 z-50">
+    <motion.nav
+      className="bg-surface/95 backdrop-blur-md sticky top-0 z-50"
+      initial={{ y: 0 }}
+      animate={{ y: isVisible ? 0 : -100 }}
+      transition={{ duration: 0.3, ease: 'easeInOut' }}
+    >
       <div className="max-w-[1200px] mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <motion.div
-            className="flex items-center gap-3 cursor-pointer"
+            className="flex items-center gap-2 cursor-pointer"
             onClick={() => navigate('/')}
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.99 }}
           >
-            <div className="w-10 h-10 bg-brand rounded-xl flex items-center justify-center">
-              <span className="text-on-brand font-bold text-[18px]">MT</span>
-            </div>
-            <div>
-              <div className="font-semibold text-[18px] text-primary leading-[22px]">mettalent</div>
-              <div className="text-[11px] text-muted leading-[13px]">Talent Supply Chain</div>
-            </div>
+            <img src={logo} alt="Mettalent Logo" className="h-9" />
+            <img src={textLogo} alt="Mettalent" className="h-9" />
           </motion.div>
 
           <div className="flex items-center gap-7">
-            <a
-              href="#features"
-              onClick={(e) => {
-                if (location.pathname !== '/') {
-                  e.preventDefault();
-                  navigate('/profile');
-                }
-              }}
+            <button
+              onClick={() => navigate('/profile')}
               className="text-[14px] font-medium text-secondary hover:text-primary transition-colors"
             >
               For Talent
-            </a>
-            <a
-              href="#features"
-              onClick={(e) => {
-                if (location.pathname !== '/') {
-                  e.preventDefault();
-                  navigate('/employer');
-                }
-              }}
+            </button>
+            <button
+              onClick={() => navigate('/employer')}
               className="text-[14px] font-medium text-secondary hover:text-primary transition-colors"
             >
               For Employers
-            </a>
+            </button>
+            <button
+              onClick={() => navigate('/login')}
+              className="text-[14px] font-medium text-secondary hover:text-primary transition-colors"
+            >
+              Login
+            </button>
             <motion.button
-              onClick={() => navigate('/profile')}
-              className="bg-brand hover:bg-brand-hover text-on-brand font-medium text-[14px] h-10 px-[18px] rounded-xl transition-all"
+              onClick={() => navigate('/register')}
+              className="font-medium text-[14px] h-10 px-[18px] rounded-xl transition-all"
+              style={{ backgroundColor: '#1C4D2D', color: '#FFFFFF' }}
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.99 }}
             >
-              Start as Talent
+              Sign Up
             </motion.button>
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
