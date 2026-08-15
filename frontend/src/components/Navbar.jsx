@@ -54,30 +54,36 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-7">
-            <button
+            <motion.button
               onClick={() => navigate('/profile')}
-              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors"
+              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all px-3 py-2 rounded-lg hover:bg-green-50"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
             >
               For Talent
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               onClick={() => navigate('/employer')}
-              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors"
+              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all px-3 py-2 rounded-lg hover:bg-green-50"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
             >
               For Employers
-            </button>
-            <button
+            </motion.button>
+            <motion.button
               onClick={() => navigate('/login')}
-              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors"
+              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all px-3 py-2 rounded-lg hover:bg-green-50"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
             >
               Login
-            </button>
+            </motion.button>
             <motion.button
               onClick={() => navigate('/register')}
               className="cursor-pointer font-medium text-[14px] h-10 px-[18px] rounded-xl transition-all hover:bg-green-800 hover:shadow-md"
               style={{ backgroundColor: '#1C4D2D', color: '#FFFFFF' }}
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.99 }}
+              whileHover={{ scale: 1.05, y: -1 }}
+              whileTap={{ scale: 0.98 }}
             >
               Sign Up
             </motion.button>
@@ -125,43 +131,51 @@ export default function Navbar() {
             className="md:hidden mt-4 pt-4 border-t border-subtle"
           >
             <div className="flex flex-col gap-4">
-              <button
+              <motion.button
                 onClick={() => {
                   navigate('/profile');
                   setIsMobileMenuOpen(false);
                 }}
-                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
+                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all text-left px-3 py-2 rounded-lg hover:bg-green-50"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 For Talent
-              </button>
-              <button
+              </motion.button>
+              <motion.button
                 onClick={() => {
                   navigate('/employer');
                   setIsMobileMenuOpen(false);
                 }}
-                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
+                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all text-left px-3 py-2 rounded-lg hover:bg-green-50"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 For Employers
-              </button>
-              <button
+              </motion.button>
+              <motion.button
                 onClick={() => {
                   navigate('/login');
                   setIsMobileMenuOpen(false);
                 }}
-                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-colors text-left"
+                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all text-left px-3 py-2 rounded-lg hover:bg-green-50"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 Login
-              </button>
-              <button
+              </motion.button>
+              <motion.button
                 onClick={() => {
                   navigate('/register');
                   setIsMobileMenuOpen(false);
                 }}
                 className="cursor-pointer font-medium text-[14px] h-10 px-[18px] rounded-xl transition-all text-center hover:bg-green-800 hover:shadow-md"
                 style={{ backgroundColor: '#1C4D2D', color: '#FFFFFF' }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 Sign Up
-              </button>
+              </motion.button>
             </div>
           </motion.div>
         )}
