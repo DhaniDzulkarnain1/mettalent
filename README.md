@@ -77,6 +77,8 @@ cd frontend && npm install && npm run dev   # :5173
 
 ## Architecture
 
+![System Architecture](screenshots/architecture.png)
+
 Frontend (React on Vercel) → Express API (Node.js on Vercel) → PostgreSQL (Neon). ML matching logic integrated directly in backend using cosine similarity algorithm. Every score is explainable with no black box.
 
 ## Disclosure
