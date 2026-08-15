@@ -92,7 +92,7 @@ export default function GapResult() {
 
             <div className="bg-gray-200 rounded-full h-3 overflow-hidden">
               <motion.div
-                className="bg-brand h-full rounded-full"
+                className="bg-green-700 h-full rounded-full"
                 initial={{ width: 0 }}
                 animate={{ width: `${readinessPercent}%` }}
                 transition={{ duration: 1, delay: 0.3 }}
@@ -126,7 +126,7 @@ export default function GapResult() {
                         <div
                           key={level}
                           className={`w-1.5 h-1.5 rounded-full ${
-                            level <= skill.proficiency ? 'bg-brand' : 'bg-brand/20'
+                            level <= skill.proficiency ? 'bg-green-700' : 'bg-green-200'
                           }`}
                         />
                       ))}
