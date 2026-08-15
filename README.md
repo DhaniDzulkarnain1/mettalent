@@ -1,13 +1,11 @@
 <div align="center">
-  <img src="screenshots/logo.svg" alt="Mettalent Logo" width="120"/>
+  <img src="screenshots/logo.svg" alt="Mettalent Logo" width="200"/>
 
-  # mettalent
+  <p>A talent supply chain platform for the Batam–Singapore corridor. It profiles a candidate's skills, measures the gap against data center role requirements, recommends micro-credentials to close that gap, and matches ready candidates to real openings.</p>
 
-  A talent supply chain platform for the Batam–Singapore corridor. It profiles a candidate's skills, measures the gap against data center role requirements, recommends micro-credentials to close that gap, and matches ready candidates to real openings.
-
-  **Batam Singapore Hackathon 2026 · Track 1 / Challenge 1: Talent Bridge**
-
-  **Team Rollerblade** · Politeknik Negeri Batam
+  <strong>Batam Singapore Hackathon 2026 · Track 1 / Challenge 1: Talent Bridge</strong>
+  <br/>
+  <strong>Team Rollerblade</strong> · Politeknik Negeri Batam
 </div>
 
 ---
