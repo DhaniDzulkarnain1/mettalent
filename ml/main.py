@@ -1,20 +1,21 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List
+from matching import compute_gap as compute_gap_impl, compute_match as compute_match_impl
 
 app = FastAPI()
 
 class GapRequest(BaseModel):
-    talentId: int
-    roleId: int
+    talentId: str
+    roleId: str
 
 class Skill(BaseModel):
-    skillId: int
+    skillId: str
     name: str
     proficiency: int
 
 class Gap(BaseModel):
-    skillId: int
+    skillId: str
     name: str
     weight: int
     reason: str
@@ -26,37 +27,32 @@ class GapResponse(BaseModel):
     explanation: str
 
 class MatchRequest(BaseModel):
-    roleId: int
+    roleId: str
     location: str
 
 class MatchedSkill(BaseModel):
-    skillId: int
+    skillId: str
     name: str
 
 class TalentMatch(BaseModel):
-    talentId: int
+    talentId: str
     name: str
     score: float
     matchedSkills: List[MatchedSkill]
     missingSkills: List[MatchedSkill]
 
 @app.post("/gap", response_model=GapResponse)
-async def compute_gap(request: GapRequest):
-    return {
-        "readiness": 0.52,
-        "have": [{"skillId": 1, "name": "Networking", "proficiency": 2}],
-        "gaps": [{"skillId": 2, "name": "Cloud Computing", "weight": 3, "reason": "Required for role"}],
-        "explanation": "Covers 1/2 required skills; largest gap: Cloud Computing"
-    }
+async def gap_endpoint(request: GapRequest):
+    try:
+        result = compute_gap_impl(request.talentId, request.roleId)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/match", response_model=List[TalentMatch])
-async def compute_match(request: MatchRequest):
-    return [
-        {
-            "talentId": 1,
-            "name": "Sample Talent",
-            "score": 0.78,
-            "matchedSkills": [{"skillId": 1, "name": "Networking"}],
-            "missingSkills": [{"skillId": 2, "name": "Cloud Computing"}]
-        }
-    ]
+async def match_endpoint(request: MatchRequest):
+    try:
+        results = compute_match_impl(request.roleId, request.location)
+        return results
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
