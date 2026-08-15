@@ -26,7 +26,11 @@ export default function Register() {
     }
     setToast({ show: true, message: 'Registration successful! Redirecting...', type: 'success' });
     setTimeout(() => {
-      navigate('/profile');
+      if (formData.userType === 'talent') {
+        navigate('/dashboard');
+      } else {
+        navigate('/employer');
+      }
     }, 1500);
   };
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 import { api } from '../lib/api';
 
 export default function GapResult() {
@@ -11,8 +11,9 @@ export default function GapResult() {
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const talentId = searchParams.get('talentId');
-  const roleId = searchParams.get('roleId');
+  // Default to t1 and network-ops if no query params provided
+  const talentId = searchParams.get('talentId') || 't1';
+  const roleId = searchParams.get('roleId') || 'network-ops';
 
   useEffect(() => {
     const loadGap = async () => {
@@ -38,10 +39,12 @@ export default function GapResult() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-canvas">
-        <Navbar />
+      <div className="flex min-h-screen bg-canvas">
+        <Sidebar />
+        <div className="flex-1 md:pl-64">
         <div className="flex items-center justify-center h-96">
           <div className="text-secondary">Analyzing readiness...</div>
+        </div>
         </div>
       </div>
     );
@@ -49,8 +52,9 @@ export default function GapResult() {
 
   if (!result) {
     return (
-      <div className="min-h-screen bg-canvas">
-        <Navbar />
+      <div className="flex min-h-screen bg-canvas">
+        <Sidebar />
+        <div className="flex-1 md:pl-64">
         <div className="flex flex-col items-center justify-center h-96 gap-4">
           <div className="text-secondary">Unable to load gap analysis. Please try again.</div>
           <button
@@ -59,6 +63,7 @@ export default function GapResult() {
           >
             Back to Profile
           </button>
+        </div>
         </div>
       </div>
     );
@@ -69,10 +74,11 @@ export default function GapResult() {
   const readinessAfterPercent = Math.round(readinessAfter * 100);
 
   return (
-    <div className="min-h-screen bg-canvas">
-      <Navbar />
+    <div className="flex min-h-screen bg-canvas">
+      <Sidebar />
 
-      <div className="max-w-5xl mx-auto px-6 py-12">
+      <div className="flex-1 md:pl-64">
+        <div className="max-w-5xl mx-auto px-6 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -231,6 +237,7 @@ export default function GapResult() {
             </motion.button>
           </div>
         </motion.div>
+        </div>
       </div>
     </div>
   );

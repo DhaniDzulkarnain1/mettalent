@@ -40,7 +40,7 @@ export default function Landing() {
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
               <motion.button
-                onClick={() => navigate('/profile')}
+                onClick={() => navigate('/register')}
                 className="cursor-pointer bg-green-700 hover:bg-green-800 hover:shadow-lg text-white font-semibold text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl shadow-sm transition-all w-full sm:w-auto"
                 whileHover={{ scale: 1.01, boxShadow: '0 4px 12px rgba(28, 77, 45, 0.2)', y: -1 }}
                 whileTap={{ scale: 0.99 }}
@@ -243,7 +243,7 @@ export default function Landing() {
           </p>
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 justify-center">
             <motion.button
-              onClick={() => navigate('/profile')}
+              onClick={() => navigate('/register')}
               className="cursor-pointer bg-white hover:bg-gray-50 hover:shadow-lg text-[14px] md:text-[16px] h-[48px] md:h-[52px] px-6 md:px-8 rounded-xl font-semibold transition-all w-full sm:w-auto"
               style={{ color: '#1C4D2D' }}
               whileHover={{ scale: 1.01, y: -1 }}
@@ -316,7 +316,7 @@ export default function Landing() {
                   </a>
                 </li>
                 <li>
-                  <button onClick={() => navigate('/profile')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
+                  <button onClick={() => navigate('/register')} className="cursor-pointer text-[13px] text-secondary hover:text-brand transition-colors">
                     For Talent
                   </button>
                 </li>

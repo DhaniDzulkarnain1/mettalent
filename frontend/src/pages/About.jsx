@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
+import logo from '../assets/Mettalent.svg';
+import textLogo from '../assets/blackk.svg';
 
 export default function About() {
   const navigate = useNavigate();
@@ -48,21 +50,12 @@ export default function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <div className="bg-surface rounded-2xl p-8 shadow-sm border border-subtle h-full">
-              {/* Placeholder Image */}
-              <div className="w-full h-64 bg-subtle rounded-xl mb-4 flex items-center justify-center">
-                <div className="text-center">
-                  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#6F8176" strokeWidth="1.5" className="mx-auto mb-2">
-                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                    <polyline points="21 15 16 10 5 21"></polyline>
-                  </svg>
-                  <p className="text-[13px] text-muted">Team Photo Placeholder</p>
-                </div>
+            <div className="bg-green-50 rounded-2xl p-8 shadow-sm h-full flex items-center justify-center">
+              {/* Mettalent Logo */}
+              <div className="flex flex-col items-center gap-4">
+                <img src={logo} alt="Mettalent Logo" className="h-24" />
+                <img src={textLogo} alt="Mettalent" className="h-12" />
               </div>
-              <p className="text-[14px] text-secondary text-center italic">
-                Team Rollerblade - Batam Singapore Hackathon 2026
-              </p>
             </div>
           </motion.div>
         </div>
@@ -158,7 +151,7 @@ export default function About() {
             </p>
             <div className="flex gap-4 justify-center">
               <motion.button
-                onClick={() => navigate('/profile')}
+                onClick={() => navigate('/register')}
                 className="font-semibold text-[16px] h-[48px] px-8 rounded-xl transition-all"
                 style={{ backgroundColor: '#1C4D2D', color: '#FFFFFF' }}
                 whileHover={{ scale: 1.01, y: -1 }}

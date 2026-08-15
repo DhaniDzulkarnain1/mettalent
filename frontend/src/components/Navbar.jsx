@@ -13,6 +13,18 @@ export default function Navbar() {
 
   const isActive = (path) => location.pathname === path;
 
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      const offsetTop = element.offsetTop - 80; // offset untuk navbar height
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -55,20 +67,28 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-7">
             <motion.button
-              onClick={() => navigate('/profile')}
+              onClick={() => navigate('/')}
               className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all px-3 py-2 rounded-lg hover:bg-green-50"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              For Talent
+              Home
             </motion.button>
             <motion.button
-              onClick={() => navigate('/employer')}
+              onClick={(e) => handleSmoothScroll(e, 'features')}
               className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all px-3 py-2 rounded-lg hover:bg-green-50"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              For Employers
+              How it Works
+            </motion.button>
+            <motion.button
+              onClick={() => navigate('/about')}
+              className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all px-3 py-2 rounded-lg hover:bg-green-50"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              About
             </motion.button>
             <motion.button
               onClick={() => navigate('/login')}
@@ -133,25 +153,36 @@ export default function Navbar() {
             <div className="flex flex-col gap-4">
               <motion.button
                 onClick={() => {
-                  navigate('/profile');
+                  navigate('/');
                   setIsMobileMenuOpen(false);
                 }}
                 className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all text-left px-3 py-2 rounded-lg hover:bg-green-50"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                For Talent
+                Home
+              </motion.button>
+              <motion.button
+                onClick={(e) => {
+                  handleSmoothScroll(e, 'features');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all text-left px-3 py-2 rounded-lg hover:bg-green-50"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                How it Works
               </motion.button>
               <motion.button
                 onClick={() => {
-                  navigate('/employer');
+                  navigate('/about');
                   setIsMobileMenuOpen(false);
                 }}
                 className="cursor-pointer text-[14px] font-medium text-secondary hover:text-primary transition-all text-left px-3 py-2 rounded-lg hover:bg-green-50"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                For Employers
+                About
               </motion.button>
               <motion.button
                 onClick={() => {

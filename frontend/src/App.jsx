@@ -12,12 +12,14 @@ import Terms from './pages/Terms';
 import Cookies from './pages/Cookies';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import TalentDashboard from './pages/TalentDashboard';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/dashboard" element={<TalentDashboard />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/gap-result" element={<GapResult />} />
         <Route path="/employer" element={<Employer />} />

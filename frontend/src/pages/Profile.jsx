@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 import { api } from '../lib/api';
 
 export default function Profile() {
@@ -41,20 +41,23 @@ export default function Profile() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-canvas">
-        <Navbar />
-        <div className="flex items-center justify-center h-96">
-          <div className="text-secondary">Loading profile...</div>
+      <div className="flex min-h-screen bg-canvas">
+        <Sidebar />
+        <div className="flex-1 md:pl-64">
+          <div className="flex items-center justify-center h-96">
+            <div className="text-secondary">Loading profile...</div>
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-canvas">
-      <Navbar />
+    <div className="flex min-h-screen bg-canvas">
+      <Sidebar />
 
-      <div className="max-w-5xl mx-auto px-6 py-12">
+      <div className="flex-1 md:pl-64">
+        <div className="max-w-5xl mx-auto px-6 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -180,6 +183,7 @@ export default function Profile() {
             </div>
           </div>
         </motion.div>
+        </div>
       </div>
     </div>
   );

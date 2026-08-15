@@ -18,7 +18,7 @@ export default function Login() {
     e.preventDefault();
     setToast({ show: true, message: 'Login successful! Redirecting...', type: 'success' });
     setTimeout(() => {
-      navigate('/profile');
+      navigate('/dashboard');
     }, 1500);
   };
 
