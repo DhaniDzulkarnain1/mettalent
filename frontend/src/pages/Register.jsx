@@ -69,7 +69,7 @@ export default function Register() {
                   onClick={() => setFormData({ ...formData, userType: 'talent' })}
                   className={`cursor-pointer px-4 py-3 rounded-xl border transition-all ${
                     formData.userType === 'talent'
-                      ? 'border-green-700 bg-green-700 hover:bg-green-800 text-white font-semibold shadow-sm'
+                      ? 'border-green-700 bg-green-700 hover:bg-green-800 text-white hover:text-white font-semibold shadow-sm'
                       : 'border-gray-300 bg-gray-100 text-gray-600 hover:bg-gray-200 hover:border-gray-400'
                   }`}
                 >
@@ -80,7 +80,7 @@ export default function Register() {
                   onClick={() => setFormData({ ...formData, userType: 'employer' })}
                   className={`cursor-pointer px-4 py-3 rounded-xl border transition-all ${
                     formData.userType === 'employer'
-                      ? 'border-green-700 bg-green-700 hover:bg-green-800 text-white font-semibold shadow-sm'
+                      ? 'border-green-700 bg-green-700 hover:bg-green-800 text-white hover:text-white font-semibold shadow-sm'
                       : 'border-gray-300 bg-gray-100 text-gray-600 hover:bg-gray-200 hover:border-gray-400'
                   }`}
                 >

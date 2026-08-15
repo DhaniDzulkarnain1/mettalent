@@ -171,7 +171,7 @@ export default function Profile() {
 
               <motion.button
                 onClick={handleAnalyze}
-                className="cursor-pointer w-full bg-brand hover:bg-green-800 text-on-brand font-semibold text-[16px] h-[52px] rounded-xl shadow-sm hover:shadow-lg transition-all"
+                className="cursor-pointer w-full bg-brand hover:bg-green-800 text-white font-semibold text-[16px] h-[52px] rounded-xl shadow-sm hover:shadow-lg transition-all"
                 whileHover={{ scale: 1.01, y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
