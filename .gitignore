@@ -4,3 +4,9 @@ __pycache__
 dist
 *.pyc
 .DS_Store
+
+# Internal documentation (keep local only)
+DEPLOYMENT.md
+DEMO_SCRIPT.md
+AGENTS.md
+CLAUDE.md
