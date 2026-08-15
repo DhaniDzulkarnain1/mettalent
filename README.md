@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="screenshots/logo-full.svg" alt="Mettalent - Talent Supply Chain Platform" width="400"/>
+  <img src="screenshots/logo.svg" alt="Mettalent Icon" width="100"/>
+  <br/>
+  <img src="screenshots/logo-full.svg" alt="Mettalent - Talent Supply Chain Platform" width="350"/>
 
   <br/><br/>
 
