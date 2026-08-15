@@ -47,6 +47,23 @@ export default function GapResult() {
     );
   }
 
+  if (!result) {
+    return (
+      <div className="min-h-screen bg-canvas">
+        <Navbar />
+        <div className="flex flex-col items-center justify-center h-96 gap-4">
+          <div className="text-secondary">Unable to load gap analysis. Please try again.</div>
+          <button
+            onClick={() => navigate('/profile')}
+            className="cursor-pointer px-6 py-2 bg-brand text-white rounded-xl hover:bg-green-800 transition-all"
+          >
+            Back to Profile
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   const readinessPercent = Math.round(result.readiness * 100);
   const readinessAfter = 0.84;
   const readinessAfterPercent = Math.round(readinessAfter * 100);
